@@ -32,8 +32,13 @@ Promise.all([
         scale: 2
     });
 
+    o1.addRepresentation("label", {
+      sele: "hetero",
+      labelType: "resname"
+    });
+
     // center on ligand safely
-    stage.autoView("hetero");
+    stage.autoView();
 });
 </script>
 
