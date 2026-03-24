@@ -22,7 +22,7 @@ Promise.all([
     o2.addRepresentation("cartoon", { color: "skyblue", opacity: 0.5 });
 
     o1.addRepresentation("ball+stick", {
-        sele: "resname 7LD",
+        sele: "hetero",
         scale: 2,
         color: "magenta"
     });
@@ -33,8 +33,13 @@ Promise.all([
         scale: 2
     });
 
+  o1.addRepresentation("label", {
+    sele: "hetero",
+    labelType: "resname"
+});
 
-    stage.autoView();
+
+    stage.autoView("hetero");
 });
 </script>
 
