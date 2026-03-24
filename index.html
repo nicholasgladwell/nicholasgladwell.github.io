@@ -19,29 +19,28 @@ Promise.all([
     var o2 = components[1];
 
     // cartoons
-    o1.addRepresentation("cartoon", { color: "residueindex" });
-    o2.addRepresentation("cartoon", { color: "skyblue" });
+    o1.addRepresentation("cartoon", {
+    color: "lightgrey",
+    opacity: 0.7
+});
 
-    // core residues (2A)
-    o1.addRepresentation("stick", {
-        sele: "151 or 155 or 339",
-        color: "green"
-    });
+// show ALL hetero atoms (debug + ensures ligand shows)
+o1.addRepresentation("ball+stick", {
+    sele: "hetero",
+    scale: 2,
+    aspectRatio: 1.5,
+    color: "magenta"
+});
 
-    // chemically different
-    o1.addRepresentation("stick", {
-        sele: "242",
-        color: "yellow"
-    });
-
-    // ligand
-    o1.addRepresentation("stick", {
-        sele: "7LD",
-        color: "magenta"
-    });
+// highlight your residues
+o1.addRepresentation("ball+stick", {
+    sele: "151 or 155 or 339 or 242",
+    color: "green",
+    scale: 2
+});
 
     // center everything properly
-    stage.autoView();
+    stage.autoView("resname 7LD");
 });
 </script>
 
