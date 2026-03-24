@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://unpkg.com/ngl@latest/dist/ngl.js"></script>
+</head>
+<body>
+
+<div id="viewport" style="width:800px; height:600px;"></div>
+
+<script>
+var stage = new NGL.Stage("viewport");
+
+stage.loadFile("aligned_2A.pdb").then(function(o1) {
+    o1.addRepresentation("cartoon", {color: "grey"});
+});
+
+stage.loadFile("aligned_2B.pdb").then(function(o2) {
+    o2.addRepresentation("cartoon", {color: "lightblue"});
+});
+
+    // core residues
+    o.addRepresentation("stick", {
+        sele: "151 or 155 or 339",
+        color: "green"
+    });
+
+    // chemically different
+    o.addRepresentation("stick", {
+        sele: "242",
+        color: "yellow"
+    });
+
+    // ligand
+    o.addRepresentation("stick", {
+        sele: "7LD",
+        color: "magenta"
+    });
+
+    o.autoView();
+});
+</script>
+
+</body>
+</html>
