@@ -10,10 +10,19 @@
 <script>
 var stage = new NGL.Stage("viewport");
 
-stage.loadFile("aligned_2A.pdb").then(function(o1) {
-    o1.addRepresentation("cartoon", { color: "grey" });
+Promise.all([
+    stage.loadFile("aligned_2A.pdb"),
+    stage.loadFile("aligned_2B.pdb")
+]).then(function(components) {
 
-    // core residues
+    var o1 = components[0];
+    var o2 = components[1];
+
+    // cartoons
+    o1.addRepresentation("cartoon", { color: "residueindex" });
+    o2.addRepresentation("cartoon", { color: "skyblue" });
+
+    // core residues (2A)
     o1.addRepresentation("stick", {
         sele: "151 or 155 or 339",
         color: "green"
@@ -31,11 +40,8 @@ stage.loadFile("aligned_2A.pdb").then(function(o1) {
         color: "magenta"
     });
 
-    o1.autoView();
-});
-
-stage.loadFile("aligned_2B.pdb").then(function(o2) {
-    o2.addRepresentation("cartoon", { color: "lightblue" });
+    // center everything properly
+    stage.autoView();
 });
 </script>
 
