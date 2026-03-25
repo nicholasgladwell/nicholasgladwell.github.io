@@ -33,6 +33,23 @@ var o1, o2, o3, o4;
 
 var showing2A = true;
 
+function toggleReceptors() {
+    if (showing2A) {
+        o1.setVisibility(false);
+        o2.setVisibility(true);
+        document.getElementById("receptorLabel").innerHTML = '<span style="color: skyblue;">5-HT2B</span>';
+    } else {
+        o1.setVisibility(true);
+        o2.setVisibility(false);
+        document.getElementById("receptorLabel").innerHTML = '<span style="color: lightgrey;">5-HT2A</span>';
+    }
+    showing2A = !showing2A;
+}
+
+  function toggleComponent(comp) {
+    comp.setVisibility(!comp.visible);
+  }
+
 var tooltip = document.createElement("div");
 tooltip.style.position = "absolute";
 tooltip.style.zIndex = 10;
@@ -145,28 +162,7 @@ o1.setVisibility(true);
 o2.setVisibility(false);
 o3.autoView();
 
-function printOrientation() {
-    console.log(stage.viewerControls.getOrientation());
-}
-
-function toggleReceptors() {
-    if (showing2A) {
-        o1.setVisibility(false);
-        o2.setVisibility(true);
-        document.getElementById("receptorLabel").innerHTML = '<span style="color: skyblue;">5-HT2B</span>';
-    } else {
-        o1.setVisibility(true);
-        o2.setVisibility(false);
-        document.getElementById("receptorLabel").innerHTML = '<span style="color: lightgrey;">5-HT2A</span>';
-    }
-    showing2A = !showing2A;
-}
-
-  function toggleComponent(comp) {
-    comp.setVisibility(!comp.visible);
-  }
 });
 </script>
-  <button onclick="printOrientation()">Save View</button>
 </body>
 </html>
