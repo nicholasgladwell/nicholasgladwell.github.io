@@ -18,6 +18,13 @@
   Showing: 5-HT2A </div>
   
 <div id="viewport" style="width:800px; height:600px;"></div>
+
+<div style="margin-bottom:10px;">
+  <span style="color:lightgrey;">■ 5-HT2A</span>
+  <span style="color:skyblue;">■ 5-HT2B</span>
+  <span style="color:magenta;">■ Ligand</span>
+  <span style="color:green;">■ Shared residues</span>
+</div>
   
 <script>
 var stage = new NGL.Stage("viewport");
@@ -137,6 +144,7 @@ function addBaseRepresentations() {
 
     // center on ligand
     o3.autoView();
+    stage.viewControls.rotate([1, 0, 0], 1.5);
 });
 o1.setVisibility(true);
 o2.setVisibility(false);
