@@ -145,6 +145,10 @@ o1.setVisibility(true);
 o2.setVisibility(false);
 o3.autoView();
 
+function printOrientation() {
+    console.log(stage.viewerControls.getOrientation());
+}
+
 function toggleReceptors() {
     if (showing2A) {
         o1.setVisibility(false);
@@ -163,5 +167,6 @@ function toggleReceptors() {
   }
 });
 </script>
+  <button onclick="printOrientation()">Save View</button>
 </body>
 </html>
