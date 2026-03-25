@@ -12,17 +12,22 @@ var stage = new NGL.Stage("viewport");
 
 Promise.all([
     stage.loadFile("aligned_2A.pdb"),
-    stage.loadFile("aligned_2B.pdb")
+    stage.loadFile("aligned_2B.pdb"),
+    stage.loadFile("ligand.pdb")
 ]).then(function(components) {
 
     var o1 = components[0];
     var o2 = components[1];
+    var o3 = components[2];
 
     o1.addRepresentation("cartoon", { color: "lightgrey", opacity: 0.7 });
     o2.addRepresentation("cartoon", { color: "skyblue", opacity: 0.5 });
 
     // show ligand(s)
-    o1.addRepresentation("ball+stick", { sele: "7LD", scale: 2, color: "magenta" });
+    o3.addRepresentation("ball+stick", {
+        color: "magenta",
+        scale: 2
+    });
 
     // highlight residues
     o1.addRepresentation("ball+stick", {
@@ -62,7 +67,7 @@ Promise.all([
     });
 
     // center on ligand safely
-    o1.autoView("resname 7LD");
+    o3.autoView();
 });
 </script>
 
