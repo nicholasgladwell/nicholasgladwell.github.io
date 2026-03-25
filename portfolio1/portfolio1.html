@@ -10,8 +10,7 @@
 <body>
 
 <div style="margin-bottom:10px;">
-<button onclick="toggleComponent(o1)">Toggle 2A</button>
-<button onclick="toggleComponent(o2)">Toggle 2B</button>
+<button onclick="toggleReceptors()">Switch 2A / 2B</button>
 <button onclick="toggleComponent(o4)">Toggle Shared Residues</button>
 </div>
 
@@ -22,6 +21,7 @@ var stage = new NGL.Stage("viewport");
 
 var o1, o2, o3, o4;
 
+  var showing2A = true;
 
 var tooltip = document.createElement("div");
 tooltip.style.position = "absolute";
@@ -135,6 +135,20 @@ function addBaseRepresentations() {
     // center on ligand
     o3.autoView();
 });
+o1.setVisibility(true);
+o2.setVisibility(false);
+
+  function toggleReceptors() {
+    if (showing2A) {
+        o1.setVisibility(false);
+        o2.setVisibility(true);
+    } else {
+        o1.setVisibility(true);
+        o2.setVisibility(false);
+    }
+    showing2A = !showing2A;
+}
+
   function toggleComponent(comp) {
     comp.setVisibility(!comp.visible);
   }
