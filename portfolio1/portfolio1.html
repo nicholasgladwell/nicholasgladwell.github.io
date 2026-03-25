@@ -25,7 +25,7 @@
   <span style="color:magenta;">■ Ligand</span>
   <span style="color:green;">■ Shared residues</span>
 </div>
-  
+  <button onclick="printOrientation()">Save View</button>
 <script>
 var stage = new NGL.Stage("viewport");
 
@@ -76,6 +76,11 @@ stage.signals.hovered.add(function (pickingProxy) {
         tooltip.style.display = "none";
     }
 });
+
+function printOrientation() {
+    console.log(stage.viewerControls.getOrientation());
+}
+  
 Promise.all([
     stage.loadFile("aligned_2A.pdb"),
     stage.loadFile("aligned_2B.pdb"),
