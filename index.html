@@ -26,8 +26,38 @@ Promise.all([
 
     // highlight residues
     o1.addRepresentation("ball+stick", {
-        sele: "151 or 155 or 339 or 242",
+        sele: "151 or 155 or 339 or 340 or 370 or 366 or 152 or 156 or 159 or 229 or 238 or 239 or 336 or 343",
         color: "green",
+        scale: 2
+    });
+
+    o2.addRepresentation("ball+stick", {
+        sele: "131 or 135 or 340 or 341 or 370 or 366 or 132 or 136 or 139 or 209 or 221 or 222 or 337 or 344",
+        color: "green",
+        scale: 2
+    });
+
+    o1.addRepresentation("ball+stick", {
+        sele: "242",
+        color: "yellow",
+        scale: 2
+    });
+
+    o2.addRepresentation("ball+stick", {
+        sele: "225",
+        color: "yellow",
+        scale: 2
+    });
+
+    o1.addRepresentation("ball+stick", {
+        sele: "131 or 227 or 228",
+        color: "blue",
+        scale: 2
+    });
+
+    o2.addRepresentation("ball+stick", {
+        sele: "359 or 362 or 363",
+        color: "red",
         scale: 2
     });
 
