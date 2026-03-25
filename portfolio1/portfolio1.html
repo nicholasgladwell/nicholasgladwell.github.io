@@ -140,11 +140,17 @@ function addBaseRepresentations() {
     });
 }
 
-     addBaseRepresentations();
+    addBaseRepresentations();
+o1.setVisibility(true);
+o2.setVisibility(false);
 
     // center on ligand
     o3.autoView();
-    stage.viewControls.rotate([0, 0.5, 0.5], 1.5);
+    stage.viewerControls.orient([
+  0, 0, 100,
+  1, 0, 0, 0,
+  80
+]);
 });
 o1.setVisibility(true);
 o2.setVisibility(false);
