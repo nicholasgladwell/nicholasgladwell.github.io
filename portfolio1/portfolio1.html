@@ -13,7 +13,10 @@
 <button onclick="toggleReceptors()">Switch 2A / 2B</button>
 <button onclick="toggleComponent(o4)">Toggle Shared Residues</button>
 </div>
-
+  
+<div id="receptorLabel" style="font-size:18px; margin-bottom:10px;">
+  Showing: 5-HT2A </div>
+  
 <div id="viewport" style="width:800px; height:600px;"></div>
   
 <script>
@@ -138,13 +141,15 @@ function addBaseRepresentations() {
 o1.setVisibility(true);
 o2.setVisibility(false);
 
-  function toggleReceptors() {
+function toggleReceptors() {
     if (showing2A) {
         o1.setVisibility(false);
         o2.setVisibility(true);
+        document.getElementById("receptorLabel").innerHTML = '<span style="color: skyblue;">5-HT2B</span>';
     } else {
         o1.setVisibility(true);
         o2.setVisibility(false);
+        document.getElementById("receptorLabel").innerText = '<span style="color: lightgrey;">5-HT2A</span>';
     }
     showing2A = !showing2A;
 }
