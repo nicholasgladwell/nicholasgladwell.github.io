@@ -20,11 +20,6 @@ var stage = new NGL.Stage("viewport");
 
 var o1, o2, o3, o4;
 
-Promise.all([
-    stage.loadFile("aligned_2A.pdb"),
-    stage.loadFile("aligned_2B.pdb"),
-    stage.loadFile("ligand.pdb"),
-    stage.loadFile("shared_residues.pdb")
 
 var tooltip = document.createElement("div");
 tooltip.style.position = "absolute";
@@ -52,7 +47,11 @@ stage.signals.hovered.add(function (pickingProxy) {
         tooltip.style.display = "none";
     }
 });
-  
+Promise.all([
+    stage.loadFile("aligned_2A.pdb"),
+    stage.loadFile("aligned_2B.pdb"),
+    stage.loadFile("ligand.pdb"),
+    stage.loadFile("shared_residues.pdb")
 ]).then(function(components) {
 
     o1 = components[0];
@@ -71,23 +70,24 @@ stage.signals.hovered.add(function (pickingProxy) {
         });
 
         // re-add base representations
-        addBaseRepresentations();
+     
 
         // highlight clicked residue
         o1.addRepresentation("ball+stick", {
-            sele: chain + " and " + resno,
+            sele: ":" + chain + " and " + resno,
             color: "orange",
             scale: 3
         });
 
         o2.addRepresentation("ball+stick", {
-            sele: chain + " and " + resno,
+            sele: ":" + chain + " and " + resno,
             color: "orange",
             scale: 3
         });
     }
 });
 
+function addBaseRepresentations() {    
     o1.addRepresentation("cartoon", { color: "lightgrey", opacity: 0.7 });
     o2.addRepresentation("cartoon", { color: "skyblue", opacity: 0.5 });
 
@@ -126,8 +126,11 @@ stage.signals.hovered.add(function (pickingProxy) {
         color: "red",
         scale: 2
     });
+}
 
-    // center on ligand safely
+     addBaseRepresentations();
+
+    // center on ligand
     o3.autoView();
 });
   function toggleComponent(comp) {
