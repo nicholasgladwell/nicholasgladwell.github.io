@@ -22,8 +22,8 @@ Promise.all([
     o2.addRepresentation("cartoon", { color: "skyblue", opacity: 0.5 });
 
     // show ligand(s)
-    o1.addRepresentation("ball+stick", { sele: "hetero", scale: 2, color: "magenta" });
-    o2.addRepresentation("ball+stick", { sele: "hetero", scale: 2, color: "magenta" });
+    o1.addRepresentation("ball+stick", { sele: "7LD", scale: 2, color: "magenta" });
+    o2.addRepresentation("ball+stick", { sele: "7LD", scale: 2, color: "magenta" });
 
     // highlight residues
     o1.addRepresentation("ball+stick", {
@@ -32,13 +32,8 @@ Promise.all([
         scale: 2
     });
 
-    o1.addRepresentation("label", {
-      sele: "hetero",
-      labelType: "resname"
-    });
-
     // center on ligand safely
-    stage.autoView();
+    stage.autoView("7LD");
 });
 </script>
 
