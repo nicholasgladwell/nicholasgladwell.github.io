@@ -1,0 +1,18 @@
+---
+title: "Exploring Structural Differences Between 5-HT2A and 5-HT2B Receptors"
+format: html
+---
+Structurally, the serotonin receptors 5-HT2A and 5-HT2B are similar. Both are stimulatory G-protein coupled receptors but with important differences in tissue distribution, which lead to dramatically different physiological effects when activated. 
+
+Many important psycho-drugs target the 5-HT2A receptor in the central nervous system. The 5-HT2B receptor on the other hand is primarily located in the periphery and myocardium. For this reason, ligand specificity is essential to avoid adverse effects such as cardiotoxicity. 
+
+This distinction is clinically important, as off-target activation of 5-HT2B has been associated with cardiac fibrosis and heart failure. This has been observed in drugs such as fenfluramine whose active metabolite, norfenfluramine, acts as a 5-HT2A, 5-HT2B, and 5-HT2C receptor agonist.
+
+This project investigates structural differences in ligand binding between these receptors to understand the basis of selectivity, using LSD as a comparison molecule.
+
+
+<iframe src="viewer.html" width="900" height="800"></iframe>
+
+Source: 7WC6, 5TVN rcsb.org
+
+Key observations:

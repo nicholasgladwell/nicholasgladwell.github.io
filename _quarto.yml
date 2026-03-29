@@ -1,0 +1,24 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Nicholas Gladwell"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: Portfolio1.qmd
+        text: Structural Differences Between 5-HT2A and 5-HT2B Receptors
+
+format:
+  html:
+    theme:
+      - spacelab
+    page-layout: full
+    css: styles.css
+    toc: true
+    smooth-scroll: true
+
+
+

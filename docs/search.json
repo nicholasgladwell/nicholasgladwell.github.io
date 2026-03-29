@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "Portfolio1.html",
+    "href": "Portfolio1.html",
+    "title": "Exploring Structural Differences Between 5-HT2A and 5-HT2B Receptors",
+    "section": "",
+    "text": "Structurally, the serotonin receptors 5-HT2A and 5-HT2B are similar. Both are stimulatory G-protein coupled receptors but with important differences in tissue distribution, which lead to dramatically different physiological effects when activated.\nMany important psycho-drugs target the 5-HT2A receptor in the central nervous system. The 5-HT2B receptor on the other hand is primarily located in the periphery and myocardium. For this reason, ligand specificity is essential to avoid adverse effects such as cardiotoxicity.\nThis distinction is clinically important, as off-target activation of 5-HT2B has been associated with cardiac fibrosis and heart failure. This has been observed in drugs such as fenfluramine whose active metabolite, norfenfluramine, acts as a 5-HT2A, 5-HT2B, and 5-HT2C receptor agonist.\nThis project investigates structural differences in ligand binding between these receptors to understand the basis of selectivity, using LSD as a comparison molecule.\n\n\nSource: 7WC6, 5TVN rcsb.org\nKey observations:"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Home",
+    "section": "",
+    "text": "I’m interested in computational approaches to pharmacology, including receptor-ligand interactions and pharmacokinetic modeling.\n\n\n\n\n\n\n\n\n\nExploring structural differences between serotonin receptor subtypes and their implications for drug design.\nView Project →"
+  },
+  {
+    "objectID": "index.html#projects",
+    "href": "index.html#projects",
+    "title": "Home",
+    "section": "",
+    "text": "Exploring structural differences between serotonin receptor subtypes and their implications for drug design.\nView Project →"
+  }
+]
