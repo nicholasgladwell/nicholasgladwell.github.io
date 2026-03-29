@@ -1,0 +1,22 @@
+---
+title: "Home"
+page-layout: full
+---
+
+# Nicholas Gladwell
+
+I’m interested in computational approaches to pharmacology, including receptor-ligand interactions and pharmacokinetic modeling.
+
+---
+
+## Bio
+
+---
+
+## Projects
+
+### 5-HT2A vs 5-HT2B Comparison
+
+Exploring structural differences between serotonin receptor subtypes and their implications for drug design.
+
+[View Project →](Portfolio1.qmd)
