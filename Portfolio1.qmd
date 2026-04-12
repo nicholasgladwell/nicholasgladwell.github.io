@@ -1,5 +1,5 @@
 ---
-title: "Structural Basis of Functional Selectivity in 5-HT<sub>2A</sub> and <sub>5-HT2B</sub> Receptors"
+title: "Structural Basis of Functional Selectivity in 5-HT<sub>2A</sub> and 5-HT<sub>2B</sub> Receptors"
 format: html
 ---
 ## Introduction
