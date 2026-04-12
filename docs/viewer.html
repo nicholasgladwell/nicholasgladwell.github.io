@@ -117,10 +117,10 @@ stage.signals.hovered.add(function (pickingProxy) {
 });
 
 Promise.all([
-    stage.loadFile("aligned_2A.pdb"),
-    stage.loadFile("aligned_2B.pdb"),
-    stage.loadFile("ligand.pdb"),
-    stage.loadFile("shared_residues.pdb")
+    stage.loadFile("data/aligned_2A.pdb"),
+    stage.loadFile("data/aligned_2B.pdb"),
+    stage.loadFile("data/ligand.pdb"),
+    stage.loadFile("data/shared_residues.pdb")
 ]).then(function(components) {
 
     o1 = components[0];

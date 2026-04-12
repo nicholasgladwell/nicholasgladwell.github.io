@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: docs
+  resources:
+    - data/
 
 website:
   title: "Nicholas Gladwell"
@@ -11,7 +13,7 @@ website:
       - text: Projects
         menu:
           - href: Portfolio1.qmd
-            text: Structural Basis of Functional Selectivity in 5-HT<sub>2A</sub> and <sub>5-HT2B</sub> Receptors
+            text: Structural Basis of Functional Selectivity in 5-HT<sub>2A</sub> and 5-HT<sub>2B</sub> Receptors
 
 format:
   html:

@@ -37,7 +37,7 @@ My current research focuses on neuropharmacology and depression-related therapie
 
 ## Projects
 
-### Structural Basis of Functional Selectivity in 5-HT<sub>2A</sub> and <sub>5-HT2B</sub> Receptors
+### Structural Basis of Functional Selectivity in 5-HT<sub>2A</sub> and 5-HT<sub>2B</sub> Receptors
 
 Comparative analysis of serotonin receptor subtypes using structural biology and computational visualization to assess ligand binding and receptor activation.
 
