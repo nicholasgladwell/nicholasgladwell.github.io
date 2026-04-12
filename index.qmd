@@ -5,18 +5,40 @@ page-layout: full
 
 # Nicholas Gladwell
 
-I’m interested in computational approaches to pharmacology, including receptor-ligand interactions and pharmacokinetic modeling.
+<img src="profile_photo.jpg" width="200">
+
+I am a pharmacology graduate student with interests in computational analysis, neuropharmacology, and pharmacokinetics/pharmacodynamics, with a focus on understanding drug action across molecular and physiological systems.
 
 ---
 
 ## Bio
+I graduated from Brigham Young University in 2024 with a double major in Exercise Science and Spanish. Relevant coursework included neuroanatomy, physiology, chemistry, and microbiology. I am currently pursuing a master's degree in pharmacology at the University of the Basque Country in Bilbao, Spain.
+
+My current research focuses on neuropharmacology and depression-related therapies, combining experimental techniques such as immunohistochemistry with computational approaches for data analysis and interpretation.
+
+---
+
+## Focus Areas
++ Neuropharmacology and CNS drug action
++ Pharmacokinetics and pharmacodynamics (including predictive modeling)
++ Computational analysis and data interpretation
++ Receptor pharmacology and ligand binding
+
+
+---
+
+## Skills and Tools
+ + <b>Molecular visualization:</b> PyMOL
+ + <b>Data analysis and modeling:</b> Python, Phoenix, GraphPad Prism
+ + <b>Image analysis:</b> FIJI/ImageJ
+ + <b>Laboratory techniques:</b> Cell culture, PCR, Western blot, immunohistochemistry, confocal microscopy
 
 ---
 
 ## Projects
 
-### 5-HT2A vs 5-HT2B Comparison
+### Structural Basis of Functional Selectivity in 5-HT<sub>2A</sub> and <sub>5-HT2B</sub> Receptors
 
-Exploring structural differences between serotonin receptor subtypes and their implications for drug design.
+Comparative analysis of serotonin receptor subtypes using structural biology and computational visualization to assess ligand binding and receptor activation.
 
 [View Project →](Portfolio1.qmd)

@@ -1,55 +1,104 @@
 <!DOCTYPE html>
 <html>
-  <div style="margin-bottom:20px;">
-</div>
 <head>
+<style>
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #212529;
+}
+.viewer-label {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+.viewer-btn {
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  margin-right: 8px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.viewer-btn:hover {
+  background-color: #1a252f;
+}
+
+.viewer-btn.secondary {
+  background-color: #6c757d;
+}
+
+.viewer-btn.secondary:hover {
+  background-color: #5a6268;
+}
+
+.rec-2a {
+  color: lightgrey;
+}
+
+.rec-2b {
+  color: skyblue;
+}
+
+</style>
   <script src="https://unpkg.com/ngl@latest/dist/ngl.js"></script>
 </head>
 <body>
 
 <div style="margin-bottom:10px;">
-<button onclick="toggleReceptors()">Switch 2A / 2B</button>
-<button onclick="toggleComponent(o4)">Toggle Shared Residues</button>
+<button class="viewer-btn secondary" onclick="toggleReceptors()">Switch 2A / 2B</button>
+<button id="sharedBtn" class="viewer-btn secondary" onclick="toggleComponent(o4)">
+  Hide Shared Residues
+</button>
 </div>
-  
-<div id="receptorLabel" style="font-size:18px; margin-bottom:10px;">
+
+<div id="receptorLabel" class="viewer-label">
   Showing: 5-HT2A </div>
-  
-<div id="viewport" style="width:800px; height:600px;"></div>
+<div id="viewport" style="width:700px; height:500px;"></div>
 
 <script>
 var stage = new NGL.Stage("viewport");
-
+stage.mouseControls.remove("hoverPick");
 var o1, o2, o3, o4;
-
 var showing2A = true;
-
-function toggleReceptors() {
+function updateLabel() {
+    const label = document.getElementById("receptorLabel");
     if (showing2A) {
-        o1.setVisibility(false);
-        o2.setVisibility(true);
-        document.getElementById("receptorLabel").innerHTML = '<span style="color: skyblue;">5-HT2B</span>';
+        label.innerHTML = 'Showing: <span>5-HT2A</span>';
     } else {
-        o1.setVisibility(true);
-        o2.setVisibility(false);
-        document.getElementById("receptorLabel").innerHTML = '<span style="color: lightgrey;">5-HT2A</span>';
+        label.innerHTML = 'Showing: <span>5-HT2B</span>';
     }
-    showing2A = !showing2A;
 }
+function toggleReceptors() {
+    showing2A = !showing2A;
 
-  function toggleComponent(comp) {
+    o1.setVisibility(showing2A);
+    o2.setVisibility(!showing2A);
+
+    updateLabel();
+}
+function toggleComponent(comp) {
     comp.setVisibility(!comp.visible);
-  }
+
+    const btn = document.getElementById("sharedBtn");
+    btn.innerText = comp.visible ? "Hide Shared Residues" : "Show Shared Residues";
+}
 
 var tooltip = document.createElement("div");
 tooltip.style.position = "absolute";
 tooltip.style.zIndex = 10;
 tooltip.style.pointerEvents = "none";
-tooltip.style.background = "rgba(0,0,0,0.6)";
-tooltip.style.color = "white";
-tooltip.style.padding = "5px";
+tooltip.style.background = "rgba(0, 0, 0, 0.75)";
+tooltip.style.borderRadius = "6px";
+tooltip.style.padding = "6px 8px";
 tooltip.style.fontSize = "12px";
-tooltip.style.display = "none";
+tooltip.style.color = "white";
+tooltip.style.boxShadow = "0 2px 6px rgba(0,0,0,0.3)";
 document.body.appendChild(tooltip);
 
 stage.signals.hovered.add(function (pickingProxy) {
@@ -66,12 +115,12 @@ stage.signals.hovered.add(function (pickingProxy) {
         tooltip.style.display = "none";
     }
 });
-  
+
 Promise.all([
-    stage.loadFile("../aligned_2A.pdb"),
-    stage.loadFile("../aligned_2B.pdb"),
-    stage.loadFile("../ligand.pdb"),
-    stage.loadFile("../shared_residues.pdb")
+    stage.loadFile("aligned_2A.pdb"),
+    stage.loadFile("aligned_2B.pdb"),
+    stage.loadFile("ligand.pdb"),
+    stage.loadFile("shared_residues.pdb")
 ]).then(function(components) {
 
     o1 = components[0];
@@ -165,8 +214,14 @@ stage.viewerControls.orient([
 -8.310500144958496, 
 1
 ]);
-
 });
 </script>
+<div id="receptorLabel" class="viewer-label" style="position: absolute; bottom: 30px; left: 30px; background: rgba(108, 117, 125, 0.85); color: white; padding: 10px; border-radius: 8px;">
+<strong>Legend</strong><br>
+LSD Ligand: Pink<br>
+Shared Residues: Green<br>
+Structurally Different: Blue/Red<br>
+Chemically Different: Yellow
+</div>
 </body>
 </html>

@@ -9,22 +9,92 @@
   {
     "objectID": "Portfolio1.html",
     "href": "Portfolio1.html",
-    "title": "Exploring Structural Differences Between 5-HT2A and 5-HT2B Receptors",
+    "title": "Structural Basis of Functional Selectivity in 5-HT2A and 5-HT2B Receptors",
     "section": "",
-    "text": "Structurally, the serotonin receptors 5-HT2A and 5-HT2B are similar. Both are stimulatory G-protein coupled receptors but with important differences in tissue distribution, which lead to dramatically different physiological effects when activated.\nMany important psycho-drugs target the 5-HT2A receptor in the central nervous system. The 5-HT2B receptor on the other hand is primarily located in the periphery and myocardium. For this reason, ligand specificity is essential to avoid adverse effects such as cardiotoxicity.\nThis distinction is clinically important, as off-target activation of 5-HT2B has been associated with cardiac fibrosis and heart failure. This has been observed in drugs such as fenfluramine whose active metabolite, norfenfluramine, acts as a 5-HT2A, 5-HT2B, and 5-HT2C receptor agonist.\nThis project investigates structural differences in ligand binding between these receptors to understand the basis of selectivity, using LSD as a comparison molecule.\n\n\nSource: 7WC6, 5TVN rcsb.org\nKey observations:"
+    "text": "Serotonin receptors 5-HT2A and 5-HT2B are closely related G-protein coupled receptors with highly conserved orthosteric binding sites. Despite this structural similarity, they produce distinct physiological effects and differ in their pharmacological profiles. While activation of 5-HT2A is associated with CNS effects, off-target activation of 5-HT2B has been linked to adverse effects such as cardiac valvulopathy, as observed with drugs like fenfluramine1. This raises an important question: how do receptors with similar binding sites lead to different functional responses?\nAlthough these receptors share highly conserved orthosteric binding sites, they can produce distinct functional responses upon ligand binding. This phenomenon, often described as functional selectivity or biased agonism, occurs when a ligand preferentially stabilizes receptor conformations associated with specific intracellular signaling pathways. In the case of serotonin receptors, a wide range of exogenous ligands have been shown to engage both Gq and β-arrestin signaling to varying degrees depending on receptor subtype.2.\nThis project examines residue-level similarities and differences between 5-HT2A and 5-HT2B using LSD as a model ligand. By integrating structural visualization with binding and functional data, it evaluates how conserved interactions within the orthosteric binding pocket and subtype-specific differences in the extended binding region may differentiall stabilize receptor conformations associated with Gq versus β-arrestin mediatec signaling. In this context, the analysis specifically explores how these structural features may contribute to biased agonism, where LSD exhibits pathway-dependent signaling across receptor subtypes."
+  },
+  {
+    "objectID": "Portfolio1.html#introduction",
+    "href": "Portfolio1.html#introduction",
+    "title": "Structural Basis of Functional Selectivity in 5-HT2A and 5-HT2B Receptors",
+    "section": "",
+    "text": "Serotonin receptors 5-HT2A and 5-HT2B are closely related G-protein coupled receptors with highly conserved orthosteric binding sites. Despite this structural similarity, they produce distinct physiological effects and differ in their pharmacological profiles. While activation of 5-HT2A is associated with CNS effects, off-target activation of 5-HT2B has been linked to adverse effects such as cardiac valvulopathy, as observed with drugs like fenfluramine1. This raises an important question: how do receptors with similar binding sites lead to different functional responses?\nAlthough these receptors share highly conserved orthosteric binding sites, they can produce distinct functional responses upon ligand binding. This phenomenon, often described as functional selectivity or biased agonism, occurs when a ligand preferentially stabilizes receptor conformations associated with specific intracellular signaling pathways. In the case of serotonin receptors, a wide range of exogenous ligands have been shown to engage both Gq and β-arrestin signaling to varying degrees depending on receptor subtype.2.\nThis project examines residue-level similarities and differences between 5-HT2A and 5-HT2B using LSD as a model ligand. By integrating structural visualization with binding and functional data, it evaluates how conserved interactions within the orthosteric binding pocket and subtype-specific differences in the extended binding region may differentiall stabilize receptor conformations associated with Gq versus β-arrestin mediatec signaling. In this context, the analysis specifically explores how these structural features may contribute to biased agonism, where LSD exhibits pathway-dependent signaling across receptor subtypes."
+  },
+  {
+    "objectID": "Portfolio1.html#serotonin-and-lsd-molecular-structures",
+    "href": "Portfolio1.html#serotonin-and-lsd-molecular-structures",
+    "title": "Structural Basis of Functional Selectivity in 5-HT2A and 5-HT2B Receptors",
+    "section": "Serotonin and LSD Molecular Structures",
+    "text": "Serotonin and LSD Molecular Structures\nTo better understand how LSD interacts with serotonin receptors, it is first useful to examine its structural similarity to the endogenous ligand.\n\n   \n\n\nLSD Serotonin Shared Structure Orthosteric Pocket Residues\n\n\n\nImages created by author in Adobe Photoshop\nThis visualization highlights structural similarities between LSD and serotonin. The “Orthosteric Pocket Residues” view highlights where on the ligands conserved receptor residues bind, which is also shown in the 3D receptor comparison. These binding sites overlap with shared structural features of both ligands, supporting the idea that binding affinity remains high when key elements are conserved across ligands."
+  },
+  {
+    "objectID": "Portfolio1.html#interactive-receptor-comparison",
+    "href": "Portfolio1.html#interactive-receptor-comparison",
+    "title": "Structural Basis of Functional Selectivity in 5-HT2A and 5-HT2B Receptors",
+    "section": "Interactive Receptor Comparison",
+    "text": "Interactive Receptor Comparison\nWhile these similarities provide insight at the molecular level, examining how LSD is positioned within the binding pocket offers a more direct view of ligand-receptor interactions. \n3D visualization rendered using NGL Viewer3. Structures shown: PDB IDs 7WC6 (5-HT2A)4 and 5TVN (5-HT2B)5.\nThese structures are derived from X-ray crystallography and were resolved at 2.6-2.9 Å, allowing for reliable identification of ligand-residue interactions. Residues are defined as those within 5 Å of LSD. Residues located deeper in the binding pocket primarily contribute to orthosteric ligand recognition (labeled in green). Those closer to the extracellular surface form an extended binding region that may influence exogenous ligand orientation and receptor activation (labeled in red/blue)."
+  },
+  {
+    "objectID": "Portfolio1.html#examining-lsd-binding-affinity-and-functional-activity",
+    "href": "Portfolio1.html#examining-lsd-binding-affinity-and-functional-activity",
+    "title": "Structural Basis of Functional Selectivity in 5-HT2A and 5-HT2B Receptors",
+    "section": "Examining LSD Binding Affinity and Functional Activity",
+    "text": "Examining LSD Binding Affinity and Functional Activity\nBased on residue identification criteria, a large proportion (~70%) of LSD binding site residues are conserved between 5-HT2A and 5-HT2B and are all located within the orthosteric binding pocket. These conserved residues, including hydrophobic (e.g., phenylalanine, valine) and hydrogen-bonding (e.g., serine) amino acids, stabilize the core ergoline structure of LSD and contribute to its similar binding affinity (Ki) across receptor subtypes.\nDespite this similarity in binding, functional outcomes differ. While EC50 and Emax values suggest variability in activation, these measures are typically derived from Gq-mediated signaling assays and may not fully reflect pathway-specific activity. Notably, LSD has been shown to exhibit functional selectivity, engaging both Gq and β-arrestin pathways. At the 5-HT2A receptor this signaling has been described to be relatively balanced1, whereas at the 5-HT2B receptor, LSD has been shown to robustly recruit β-arrestin and may display pathway-dependent differences in signaling efficacy2.\nThis indicates that differences in ligand-receptor interactions, especially outside the conserved orthosteric pocket, likely influence how specific receptor conformations are stabilized.\n\n\n\n\nReceptor\n\n\nKi (nM)\n\n\nAssay (Functional)\n\n\nEC50 (nM)\n\n\nEmax (%)\n\n\n\n\n\n\n5-HT2A\n\n\n0.47–21\n\n\nIP1 formation\n\n\n0.24\n\n\n84\n\n\n\n\n5-HT2B\n\n\n0.98-30\n\n\nCa2+\n\n\n8\n\n\n38\n\n\n\n\nSources: 6 7 8 Emax is relative to serotonin. Values are selected from representative studies using IP1 accumulation or Ca2+ release assays as proxies for Gq-mediated signaling. Results may vary depending on assay conditions.\nThese observations support the hypothesis that ligand interactions in the extended binding region, rather than the conserved orthosteric pocket, play a key role in stabilizing receptor conformations associated with pathway-specific signaling."
+  },
+  {
+    "objectID": "Portfolio1.html#residue-differences-and-predicted-binding-interactions",
+    "href": "Portfolio1.html#residue-differences-and-predicted-binding-interactions",
+    "title": "Structural Basis of Functional Selectivity in 5-HT2A and 5-HT2B Receptors",
+    "section": "Residue Differences and Predicted Binding Interactions",
+    "text": "Residue Differences and Predicted Binding Interactions\nTo identify structural features that may underlie these functional differences, residues were categorized based on conservation and physiochemical variation. These residues can be broadly interpreted as beloning either to the conserved orthosteric binding pocket or to a more variable extended binding region closer to the extracelular surface. Interactions were predicted based on interaction type and distance, but note that distances should be interpreted as approximate due to the resolution limitations.\n\nStructurally Different\n\n\n\n\nResidue\n\n\nReceptor Subtype\n\n\nDistance From Ligand (Å)\n\n\nPredicted Interaction\n\n\n\n\n\n\nSerine\n\n\n5-HT2A\n\n\n3.72 Å\n\n\nPolar H-Bond\n\n\n\n\nCysteine\n\n\n5-HT2A\n\n\n4.70 Å\n\n\nNon-specific interaction\n\n\n\n\nLeucine\n\n\n5-HT2A\n\n\n4.91 Å\n\n\nHydrophobic\n\n\n\n\nGlutamine\n\n\n5-HT2B\n\n\n4.48 Å\n\n\nPolar H-Bond\n\n\n\n\nLeucine\n\n\n5-HT2B\n\n\n3.68 Å\n\n\nHydrophobic\n\n\n\n\nGlutamic Acid\n\n\n5-HT2B\n\n\n3.88 Å\n\n\nNegative Ionic\n\n\n\n\nResidue data were analyzed using PyMOL9\nSeveral subtype-specific residues introduce localized differences in polarity and charge within the extended binding region. Notably, the presence of a negatively charged glutamic acid residue in 5-HT2B, absent in 5-HT2A, creates a distinct electrostatic environment. While this residue does not interact directly with any protonated groups of LSD, it may influence ligand orientation or stabilize alternative receptor conformations. In combination with other nearby substitutions, these differences may contribute to subtype-specific signaling outcomes.\n\n\nChemically Different\n\n\n\n\n5-HT2A Residue\n\n\n5-HT2A Distance\n\n\n5-HT2A Predicted Interaction\n\n\n5-HT2B Residue\n\n\n5-HT2B Distance\n\n\n5-HT2B Predicted Interaction\n\n\n\n\n\n\nSerine\n\n\n3.81 Å\n\n\nPolar H-Bond\n\n\nAlanine\n\n\n3.82 Å\n\n\nHydrophobic\n\n\n\n\nResidue data were analyzed using PyMOL9\nA single chemically distinct substitution was identified within the orthosteric binding pocket. This change removes a potential hydrogen-bond interaction, replacing it with a hydrophobic contact. However, given the overall conservation of the orthosteric pocket and the similar binding affinities observed between receptor subtypes, this substitution alone is unlikely to explain differences in functional response."
+  },
+  {
+    "objectID": "Portfolio1.html#conclusions",
+    "href": "Portfolio1.html#conclusions",
+    "title": "Structural Basis of Functional Selectivity in 5-HT2A and 5-HT2B Receptors",
+    "section": "Conclusions",
+    "text": "Conclusions\nOverall, these highlighted differences do not substantially alter binding affinity but may influence how receptor interactions are distributed across the orthosteric and extended binding regions. These subtle variations could affect the stabilization of receptor conformations associated with different signaling pathways, contributing to subtype-specific functional responses and potential signaling bias.\nThese findings support a structural basis for biased agonism and highlight the importance of extended binding site interactions in shaping pathway-selective receptor activation."
+  },
+  {
+    "objectID": "Portfolio1.html#references",
+    "href": "Portfolio1.html#references",
+    "title": "Structural Basis of Functional Selectivity in 5-HT2A and 5-HT2B Receptors",
+    "section": "References",
+    "text": "References\n\n\n1. Rothman RB, Baumann MH, Savage JE, Rauser L, McBride A, Hufeisen SJ, Roth BL. Evidence for possible involvement of 5-HT(2B) receptors in the cardiac valvulopathy associated with fenfluramine and other serotonergic medications. Circulation. 2000 Dec 5;102(23):2836-41. doi: 10.1161/01.cir.102.23.2836. PMID: 11104741.↩︎\n2. McCorvy JD, Wacker D, Wang S, Agegnehu B, Liu J, Lansu K, Tribo AR, Olsen RHJ, Che T, Jin J, Roth BL. Structural determinants of 5-HT2B receptor activation and biased agonism. Nat Struct Mol Biol. 2018 Sep;25(9):787-796. doi: 10.1038/s41594-018-0116-7. Epub 2018 Aug 20. PMID: 30127358; PMCID: PMC6237183.↩︎\n3. Rose AS, Hildebrand PW. NGL Viewer: a web application for molecular visualization. Nucleic Acids Res. 2015.↩︎\n4. Cao D, Yu J, Wang H, Luo Z, Liu X, He L, Qi J, Fan L, Tang L, Chen Z, Li J, Cheng J, Wang S. Crystal structure of serotonin 2A receptor in complex with LSD (PDB ID: 7WC6). Protein Data Bank. 2022. doi:10.2210/pdb7WC6/pdb.↩︎\n5. Wacker, D., Wang, S., McCorvy, J.D., Betz, R.M., Venkatakrishnan, A.J., Levit, A., Lansu, K., Schools, Z.L., Che, T., Nichols, D.E., Shoichet, B.K., Dror, R.O., Roth, B.L. Crystal structure of the LSD-bound 5-HT2B receptor (PDB ID: 5TVN). Protein Data Bank. 2017. doi:10.2210/pdb5TVN/pdb.↩︎\n6. Psychoactive Drug Screening Program (PDSP) Ki Database [Internet]. Chapel Hill (NC): University of North Carolina; [cited 2026 Apr 11]. Available from: https://pdsp.unc.edu/databases/pdsp.php↩︎\n7. Janowsky A, Eshleman AJ, Johnson RA, Wolfrum KM, Hinrichs DJ, Yang J, Zabriskie TM, Smilkstein MJ, Riscoe MK. Mefloquine and psychotomimetics share neurotransmitter receptor and transporter interactions in vitro. Psychopharmacology (Berl). 2014 Jul;231(14):2771-83. doi: 10.1007/s00213-014-3446-0. Epub 2014 Feb 2. PMID: 24488404; PMCID: PMC4097020.↩︎\n8. Wsół A. Cardiovascular safety of psychedelic medicine: current status and future directions. Pharmacol Rep. 2023 Dec;75(6):1362-1380. doi: 10.1007/s43440-023-00539-4. Epub 2023 Oct 24. PMID: 37874530; PMCID: PMC10661823.↩︎\n9. Schrödinger, LLC. The PyMOL Molecular Graphics System, Version 3.1.0.↩︎"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Home",
     "section": "",
-    "text": "I’m interested in computational approaches to pharmacology, including receptor-ligand interactions and pharmacokinetic modeling.\n\n\n\n\n\n\n\n\n\nExploring structural differences between serotonin receptor subtypes and their implications for drug design.\nView Project →"
+    "text": "I am a pharmacology graduate student with interests in computational analysis, neuropharmacology, and pharmacokinetics/pharmacodynamics, with a focus on understanding drug action across molecular and physiological systems.\n\n\n\nI graduated from Brigham Young University in 2024 with a double major in Exercise Science and Spanish. Relevant coursework included neuroanatomy, physiology, chemistry, and microbiology. I am currently pursuing a master’s degree in pharmacology at the University of the Basque Country in Bilbao, Spain.\nMy current research focuses on neuropharmacology and depression-related therapies, combining experimental techniques such as immunohistochemistry with computational approaches for data analysis and interpretation.\n\n\n\n\n\nNeuropharmacology and CNS drug action\nPharmacokinetics and pharmacodynamics (including predictive modeling)\nComputational analysis and data interpretation\nReceptor pharmacology and ligand binding\n\n\n\n\n\n\nMolecular visualization: PyMOL\nData analysis and modeling: Python, Phoenix, GraphPad Prism\nImage analysis: FIJI/ImageJ\nLaboratory techniques: Cell culture, PCR, Western blot, immunohistochemistry, confocal microscopy\n\n\n\n\n\n\n\nComparative analysis of serotonin receptor subtypes using structural biology and computational visualization to assess ligand binding and receptor activation.\nView Project →"
+  },
+  {
+    "objectID": "index.html#bio",
+    "href": "index.html#bio",
+    "title": "Home",
+    "section": "",
+    "text": "I graduated from Brigham Young University in 2024 with a double major in Exercise Science and Spanish. Relevant coursework included neuroanatomy, physiology, chemistry, and microbiology. I am currently pursuing a master’s degree in pharmacology at the University of the Basque Country in Bilbao, Spain.\nMy current research focuses on neuropharmacology and depression-related therapies, combining experimental techniques such as immunohistochemistry with computational approaches for data analysis and interpretation."
+  },
+  {
+    "objectID": "index.html#focus-areas",
+    "href": "index.html#focus-areas",
+    "title": "Home",
+    "section": "",
+    "text": "Neuropharmacology and CNS drug action\nPharmacokinetics and pharmacodynamics (including predictive modeling)\nComputational analysis and data interpretation\nReceptor pharmacology and ligand binding"
+  },
+  {
+    "objectID": "index.html#skills-and-tools",
+    "href": "index.html#skills-and-tools",
+    "title": "Home",
+    "section": "",
+    "text": "Molecular visualization: PyMOL\nData analysis and modeling: Python, Phoenix, GraphPad Prism\nImage analysis: FIJI/ImageJ\nLaboratory techniques: Cell culture, PCR, Western blot, immunohistochemistry, confocal microscopy"
   },
   {
     "objectID": "index.html#projects",
     "href": "index.html#projects",
     "title": "Home",
     "section": "",
-    "text": "Exploring structural differences between serotonin receptor subtypes and their implications for drug design.\nView Project →"
+    "text": "Comparative analysis of serotonin receptor subtypes using structural biology and computational visualization to assess ligand binding and receptor activation.\nView Project →"
   }
 ]
