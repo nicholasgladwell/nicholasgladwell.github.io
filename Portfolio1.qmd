@@ -4,11 +4,11 @@ format: html
 ---
 ## Introduction
 
-Serotonin receptors 5-HT<sub>2A</sub> and 5-HT<sub>2B</sub> are closely related G-protein coupled receptors with highly conserved orthosteric binding sites. Despite this structural similarity, they produce distinct physiological effects and differ in their pharmacological profiles. While activation of 5-HT<sub>2A</sub> is associated with CNS effects, off-target activation of 5-HT<sub>2B</sub> has been linked to adverse effects such as cardiac valvulopathy, as observed with drugs like fenfluramine<sup><a href="#fn1" id="ref1">1</a></sup>. This raises an important question: how do receptors with similar binding sites lead to different functional responses?
+Serotonin receptors 5-HT<sub>2A</sub> and 5-HT<sub>2B</sub> are closely related G-protein coupled receptors with highly conserved orthosteric binding sites. Despite this structural similarity, they produce distinct physiological effects and differ in their pharmacological profiles. While activation of 5-HT<sub>2A</sub> is associated with CNS effects, off-target activation of 5-HT<sub>2B</sub> has been linked to adverse effects such as cardiac valvulopathy, as observed with drugs like fenfluramine<sup><a href="#fn1" id="ref1">1</a></sup>. This raises an important question: what leads receptors with similar binding sites to express different functional responses?
 
 Although these receptors share highly conserved orthosteric binding sites, they can produce distinct functional responses upon ligand binding. This phenomenon, often described as functional selectivity or biased agonism, occurs when a ligand preferentially stabilizes receptor conformations associated with specific intracellular signaling pathways. In the case of serotonin receptors, a wide range of exogenous ligands have been shown to engage both Gq and β-arrestin signaling to varying degrees depending on receptor subtype.<sup><a href="#fn2" id="ref2">2</a></sup>.
 
-This project examines residue-level similarities and differences between 5-HT<sub>2A</sub> and 5-HT<sub>2B</sub> using LSD as a model ligand. By integrating structural visualization with binding and functional data, it evaluates how conserved interactions within the orthosteric binding pocket and subtype-specific differences in the extended binding region may differentiall stabilize receptor conformations associated with Gq versus β-arrestin mediatec signaling. In this context, the analysis specifically explores how these structural features may contribute to biased agonism, where LSD exhibits pathway-dependent signaling across receptor subtypes.
+This project examines residue-level similarities and differences between 5-HT<sub>2A</sub> and 5-HT<sub>2B</sub> using LSD as a model ligand. By integrating structural visualization with binding and functional data, it evaluates how conserved interactions within the orthosteric binding pocket and subtype-specific differences in the extended binding region may differentially stabilize receptor conformations associated with Gprotein (Gq) versus β-arrestin mediated signaling. In this context, the analysis specifically explores how these structural features may contribute to biased agonism, where LSD exhibits pathway-dependent signaling across receptor subtypes.
 
 ## Serotonin and LSD Molecular Structures
 
@@ -67,9 +67,9 @@ function toggleLayer(id) {
   document.getElementById(id).classList.toggle('visible');
 }
 </script>
-<i>Images created by author in Adobe Photoshop</i>
+<i>Images created by author using Adobe Photoshop</i>
 
-This visualization highlights structural similarities between LSD and serotonin. The "Orthosteric Pocket Residues" view highlights where on the ligands conserved receptor residues bind, which is also shown in the 3D receptor comparison. These binding sites overlap with shared structural features of both ligands, supporting the idea that binding affinity remains high when key elements are conserved across ligands.
+This visualization highlights structural similarities between LSD and serotonin. The "Orthosteric Pocket Residues" view marks where conserved binding site residues (shown in green), conserved across both 5-HT<sub>2A</sub> and 5-HT<sub>2B</sub> interact with each ligand. These interactions sites cluster around shared functional groups, showing that key residues in the orthosteric binding pocket engage common structural features across both molecules, helping maintain binding affinity.
 
 ## Interactive Receptor Comparison
 
@@ -78,22 +78,18 @@ While these similarities provide insight at the molecular level, examining how L
 
 <i>3D visualization rendered using NGL Viewer<sup><a href="#fn3" id="ref3">3</a></sup>. Structures shown: PDB IDs 7WC6 (5-HT<sub>2A</sub>)<sup><a href="#fn4" id="ref4">4</a></sup> and 5TVN (5-HT<sub>2B</sub>)<sup><a href="#fn5" id="ref5">5</a></sup>.</i>
 
-These structures are derived from X-ray crystallography and were resolved at 2.6-2.9 Å, allowing for reliable identification of ligand-residue interactions. Residues are defined as those within 5 Å of LSD. Residues located deeper in the binding pocket primarily contribute to orthosteric ligand recognition (labeled in green). Those closer to the extracellular surface form an extended binding region that may influence exogenous ligand orientation and receptor activation (labeled in red/blue).
+These structures are derived from X-ray crystallography and were resolved at 2.6-2.9 Å, allowing for reliable identification of ligand-residue interactions. Residues are defined as those within 5 Å of LSD. Residues located deeper in the binding pocket primarily contribute to orthosteric ligand recognition (labeled in green). In general, those closer to the ligand's extended moiety form an extended binding region that may influence exogenous ligand orientation and receptor activation (labeled in red/blue).
 
 ## Examining LSD Binding Affinity and Functional Activity
 
-Based on residue identification criteria, a large proportion (~70%) of LSD binding site residues are conserved between 5-HT<sub>2A</sub> and 5-HT<sub>2B</sub> and are all located within the orthosteric binding pocket. These conserved residues, including hydrophobic (e.g., phenylalanine, valine) and hydrogen-bonding (e.g., serine) amino acids, stabilize the core ergoline structure of LSD and contribute to its similar binding affinity (K<sub>i</sub>) across receptor subtypes.
-
-Despite this similarity in binding, functional outcomes differ. While EC<sub>50</sub> and E<sub>max</sub> values suggest variability in activation, these measures are typically derived from Gq-mediated signaling assays and may not fully reflect pathway-specific activity. Notably, LSD has been shown to exhibit functional selectivity, engaging both Gq and β-arrestin pathways. At the 5-HT<sub>2A</sub> receptor this signaling has been described to be relatively balanced<sup><a href="#fn1" id="ref1">1</a></sup>, whereas at the 5-HT<sub>2B</sub> receptor, LSD has been shown to robustly recruit β-arrestin and may display pathway-dependent differences in signaling efficacy<sup><a href="#fn2" id="ref2">2</a></sup>.
-
-This indicates that differences in ligand-receptor interactions, especially outside the conserved orthosteric pocket, likely influence how specific receptor conformations are stabilized.
+Based on residue identification criteria, a large proportion (~70%) of LSD binding site residues are conserved between 5-HT<sub>2A</sub> and 5-HT<sub>2B</sub> receptors and are all located within the orthosteric binding pocket. These conserved residues, including hydrophobic (e.g., phenylalanine, valine) and hydrogen-bonding (e.g., serine) amino acids, stabilize the core ergoline structure of LSD and contribute to its similar binding affinity (K<sub>i</sub>) across receptor subtypes.
 
 <table class="residue-table">
   <thead>
     <tr>
       <th>Receptor</th>
       <th>K<sub>i</sub> (nM)</th>
-      <th>Assay (Functional)</th>
+      <th>Assay</th>
       <th>EC<sub>50</sub> (nM)</th>
       <th>E<sub>max</sub> (%)</th>
     </tr>
@@ -117,11 +113,15 @@ This indicates that differences in ligand-receptor interactions, especially outs
 </table>
 <i>Sources: <sup><a href="#fn6" id="ref6">6</a> </sup><sup><a href="#fn7" id="ref7">7</a></sup> <sup><a href="#fn8" id="ref8">8</a></sup> E<sub>max</sub> is relative to serotonin. Values are selected from representative studies using IP1 accumulation or Ca<sup>2+</sup> release assays as proxies for Gq-mediated signaling. Results may vary depending on assay conditions.</i>
 
-These observations support the hypothesis that ligand interactions in the extended binding region, rather than the conserved orthosteric pocket, play a key role in stabilizing receptor conformations associated with pathway-specific signaling.
+Despite this similarity in binding, functional outcomes differ. While EC<sub>50</sub> and E<sub>max</sub> values suggest variability in activation, these measures are typically derived from Gq-mediated signaling assays and may not fully reflect pathway-specific activity. Notably, LSD has been shown to exhibit functional selectivity, engaging both Gq and β-arrestin pathways. At the 5-HT<sub>2A</sub> receptor this signaling has been described to be relatively balanced<sup><a href="#fn1" id="ref1">1</a></sup>, whereas at the 5-HT<sub>2B</sub> receptor, LSD has been shown to robustly recruit β-arrestin and may display pathway-dependent differences in signaling efficacy<sup><a href="#fn2" id="ref2">2</a></sup>.
+
+This indicates that differences in ligand-receptor interactions, especially outside the conserved orthosteric pocket, likely influence how specific receptor conformations are stabilized.
+
+Together, these findings suggest that while conserved orthosteric interactions mainly determine binding affinity, differences in ligand interactions outside this region likely contribute to the distinct receptor conformations underlying pathway-specific signaling.
 
 ## Residue Differences and Predicted Binding Interactions
 
-To identify structural features that may underlie these functional differences, residues were categorized based on conservation and physiochemical variation. These residues can be broadly interpreted as beloning either to the conserved orthosteric binding pocket or to a more variable extended binding region closer to the extracelular surface. Interactions were predicted based on interaction type and distance, but note that distances should be interpreted as approximate due to the resolution limitations. 
+To further examine the basis of these functional differences, residues were analyzed in terms of their structural and physicochemical properties. Differences in the extended binding region primarily reflect structural variation between receptor subtypes, whereas  only a single variation was identified within the conserved orthosteric pocket, consisting of a more subtle chemical change. Interactions were predicted based on interaction type and distance, though distances should be interpreted as approximate due to resolution limitations and the dynamic nature of receptors.
 
 ### Structurally Different
 
@@ -207,7 +207,7 @@ A single chemically distinct substitution was identified within the orthosteric 
 
 ## Conclusions
 
-Overall, these highlighted differences do not substantially alter binding affinity but may influence how receptor interactions are distributed across the orthosteric and extended binding regions. These subtle variations could affect the stabilization of receptor conformations associated with different signaling pathways, contributing to subtype-specific functional responses and potential signaling bias.
+Overall, these highlighted differences do not substantially alter binding affinity, but may influence how receptor interactions are distributed across the orthosteric and extended binding regions. These subtle variations could affect the stabilization of receptor conformations associated with different signaling pathways, contributing to subtype-specific functional responses and potential signaling bias.
 
 These findings support a structural basis for biased agonism and highlight the importance of extended binding site interactions in shaping pathway-selective receptor activation.
 
