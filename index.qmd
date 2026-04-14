@@ -29,7 +29,7 @@ My current research focuses on neuropharmacology and depression-related therapie
 
 ## Skills and Tools
  + <b>Molecular visualization:</b> PyMOL
- + <b>Data analysis and modeling:</b> Python, Phoenix, GraphPad Prism
+ + <b>Data analysis and modeling:</b> Python, Phoenix WinNonlin, GraphPad Prism
  + <b>Image analysis:</b> FIJI/ImageJ
  + <b>Laboratory techniques:</b> Cell culture, PCR, Western blot, immunohistochemistry, confocal microscopy
 
