@@ -27,11 +27,17 @@ format:
     toc: true
     smooth-scroll: true
     embed-resources: false
-    math: mathjax
-    mathjax:
-      config:
-        loader:
-          load: []
+    include-in-header:
+      text: |
+        <script>
+          window.MathJax = {
+            loader: { load: [] },
+            tex: {
+              inlineMath: [['$', '$'], ['\\(', '\\)']],
+              displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            }
+          };
+        </script>
 
 
 

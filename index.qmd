@@ -5,10 +5,11 @@ page-layout: full
 
 # Nicholas Gladwell
 
-<img src="profile_photo.jpg"
+<img src="/profile_photo.jpg?v=2"
      width="200"
      loading="eager"
-     decoding="async"
+     decoding="sync"
+     fetchpriority="high"
      style="display:block; background-color:white;">
 
 I am a pharmacology graduate student with interests in computational analysis, neuropharmacology, and pharmacokinetics/pharmacodynamics, with a focus on understanding drug action across molecular and physiological systems.

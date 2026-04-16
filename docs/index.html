@@ -71,36 +71,16 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
+<script>
+  window.MathJax = {
+    loader: { load: [] },
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']]
     }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
+  };
 </script>
+
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -195,7 +175,7 @@ window.Quarto = {
 
 <section id="nicholas-gladwell" class="level1">
 <h1>Nicholas Gladwell</h1>
-<p><img src="profile_photo.jpg" width="200" loading="eager" decoding="async" style="display:block; background-color:white;"></p>
+<p><img src="./profile_photo.jpg?v=2" width="200" loading="eager" decoding="sync" fetchpriority="high" style="display:block; background-color:white;"></p>
 <p>I am a pharmacology graduate student with interests in computational analysis, neuropharmacology, and pharmacokinetics/pharmacodynamics, with a focus on understanding drug action across molecular and physiological systems.</p>
 <hr>
 <section id="bio" class="level2">
@@ -235,7 +215,6 @@ window.Quarto = {
 <h3 class="anchored" data-anchor-id="monte-carlo-simulation-of-antibiotic-pk-variability-and-probability-of-target-attainment">Monte Carlo Simulation of Antibiotic PK Variability and Probability of Target Attainment</h3>
 <p>Simulating interindividual pharmacokinetic variability to evaluate the probability of achieving therapeutic antibiotic exposure targets.</p>
 <p><a href="./pk-monte-carlo-simulation.html">View Project →</a></p>
-
 
 
 </section>

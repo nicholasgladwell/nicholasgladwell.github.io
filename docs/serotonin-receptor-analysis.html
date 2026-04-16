@@ -71,36 +71,16 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
+<script>
+  window.MathJax = {
+    loader: { load: [] },
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']]
     }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
+  };
 </script>
+
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -203,7 +183,7 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="serotonin-and-lsd-molecular-structures">Serotonin and LSD Molecular Structures</h2>
 To better understand how LSD interacts with serotonin receptors, it is first useful to examine its structural similarity to the endogenous ligand.
 <div class="molecule-container">
-<p><img id="lsd" src="overlay/lsd.png" class="layer visible"> <img id="serotonin" src="overlay/serotonin.png" class="layer"> <img id="shared" src="overlay/common.png" class="layer"> <img id="residues" src="overlay/shared_residues.png" class="layer"></p>
+<p><img id="lsd" src="./overlay/lsd.png" class="layer visible"> <img id="serotonin" src="./overlay/serotonin.png" class="layer"> <img id="shared" src="./overlay/common.png" class="layer"> <img id="residues" src="./overlay/shared_residues.png" class="layer"></p>
 </div>
 <div class="controls">
 <p><button class="viewer-btn secondary" onclick="toggleLayer('lsd')">LSD</button> <button class="viewer-btn secondary" onclick="toggleLayer('serotonin')">Serotonin</button> <button class="viewer-btn secondary" onclick="toggleLayer('shared')">Shared Structure</button> <button class="viewer-btn secondary" onclick="toggleLayer('residues')">Orthosteric Pocket Residues</button></p>
@@ -503,7 +483,6 @@ Hydrophobic
 <p><sup id="fn7">7. Janowsky A, Eshleman AJ, Johnson RA, Wolfrum KM, Hinrichs DJ, Yang J, Zabriskie TM, Smilkstein MJ, Riscoe MK. Mefloquine and psychotomimetics share neurotransmitter receptor and transporter interactions in vitro. Psychopharmacology (Berl). 2014 Jul;231(14):2771-83. doi: 10.1007/s00213-014-3446-0. Epub 2014 Feb 2. PMID: 24488404; PMCID: PMC4097020.<a href="#ref7" title="Jump back to footnote 7 in the text.">↩︎</a></sup><br></p>
 <p><sup id="fn8">8. Wsół A. Cardiovascular safety of psychedelic medicine: current status and future directions. Pharmacol Rep.&nbsp;2023 Dec;75(6):1362-1380. doi: 10.1007/s43440-023-00539-4. Epub 2023 Oct 24. PMID: 37874530; PMCID: PMC10661823.<a href="#ref8" title="Jump back to footnote 8 in the text.">↩︎</a></sup><br></p>
 <p><sup id="fn9">9. Schrödinger, LLC. The PyMOL Molecular Graphics System, Version 3.1.0.<a href="#ref9" title="Jump back to footnote 9 in the text.">↩︎</a></sup></p>
-
 
 
 </section>
