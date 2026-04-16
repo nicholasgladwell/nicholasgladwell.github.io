@@ -63,11 +63,60 @@
     "text": "References\n\n\n1. Rothman RB, Baumann MH, Savage JE, Rauser L, McBride A, Hufeisen SJ, Roth BL. Evidence for possible involvement of 5-HT(2B) receptors in the cardiac valvulopathy associated with fenfluramine and other serotonergic medications. Circulation. 2000 Dec 5;102(23):2836-41. doi: 10.1161/01.cir.102.23.2836. PMID: 11104741.↩︎\n2. McCorvy JD, Wacker D, Wang S, Agegnehu B, Liu J, Lansu K, Tribo AR, Olsen RHJ, Che T, Jin J, Roth BL. Structural determinants of 5-HT2B receptor activation and biased agonism. Nat Struct Mol Biol. 2018 Sep;25(9):787-796. doi: 10.1038/s41594-018-0116-7. Epub 2018 Aug 20. PMID: 30127358; PMCID: PMC6237183.↩︎\n3. Rose AS, Hildebrand PW. NGL Viewer: a web application for molecular visualization. Nucleic Acids Res. 2015.↩︎\n4. Cao D, Yu J, Wang H, Luo Z, Liu X, He L, Qi J, Fan L, Tang L, Chen Z, Li J, Cheng J, Wang S. Crystal structure of serotonin 2A receptor in complex with LSD (PDB ID: 7WC6). Protein Data Bank. 2022. doi:10.2210/pdb7WC6/pdb.↩︎\n5. Wacker, D., Wang, S., McCorvy, J.D., Betz, R.M., Venkatakrishnan, A.J., Levit, A., Lansu, K., Schools, Z.L., Che, T., Nichols, D.E., Shoichet, B.K., Dror, R.O., Roth, B.L. Crystal structure of the LSD-bound 5-HT2B receptor (PDB ID: 5TVN). Protein Data Bank. 2017. doi:10.2210/pdb5TVN/pdb.↩︎\n6. Psychoactive Drug Screening Program (PDSP) Ki Database [Internet]. Chapel Hill (NC): University of North Carolina; [cited 2026 Apr 11]. Available from: https://pdsp.unc.edu/databases/pdsp.php↩︎\n7. Janowsky A, Eshleman AJ, Johnson RA, Wolfrum KM, Hinrichs DJ, Yang J, Zabriskie TM, Smilkstein MJ, Riscoe MK. Mefloquine and psychotomimetics share neurotransmitter receptor and transporter interactions in vitro. Psychopharmacology (Berl). 2014 Jul;231(14):2771-83. doi: 10.1007/s00213-014-3446-0. Epub 2014 Feb 2. PMID: 24488404; PMCID: PMC4097020.↩︎\n8. Wsół A. Cardiovascular safety of psychedelic medicine: current status and future directions. Pharmacol Rep. 2023 Dec;75(6):1362-1380. doi: 10.1007/s43440-023-00539-4. Epub 2023 Oct 24. PMID: 37874530; PMCID: PMC10661823.↩︎\n9. Schrödinger, LLC. The PyMOL Molecular Graphics System, Version 3.1.0.↩︎"
   },
   {
+    "objectID": "Portfolio2.html",
+    "href": "Portfolio2.html",
+    "title": "Monte Carlo Simulation of Antibiotic PK Variability and Probability of Target Attainment",
+    "section": "",
+    "text": "Monte Carlo simulations are widely used in pharmacokinetics to model inter-individual variability and predict drug exposure across virtual populations. By repeatedly sampling from parameter distributions, these methods allow estimation of the probability of achieving pharmacodynamic targets under different clinical scenarios.\nIn the context of antibacterial therapy, this is commonly expressed as the probability of target attainment (PTA), which quantifies the likelihood that a given dosing regimen will achieve a predefined PK/PD index associated with efficacy."
+  },
+  {
+    "objectID": "Portfolio2.html#introduction",
+    "href": "Portfolio2.html#introduction",
+    "title": "Monte Carlo Simulation of Antibiotic PK Variability and Probability of Target Attainment",
+    "section": "",
+    "text": "Monte Carlo simulations are widely used in pharmacokinetics to model inter-individual variability and predict drug exposure across virtual populations. By repeatedly sampling from parameter distributions, these methods allow estimation of the probability of achieving pharmacodynamic targets under different clinical scenarios.\nIn the context of antibacterial therapy, this is commonly expressed as the probability of target attainment (PTA), which quantifies the likelihood that a given dosing regimen will achieve a predefined PK/PD index associated with efficacy."
+  },
+  {
+    "objectID": "Portfolio2.html#simulation-parameters",
+    "href": "Portfolio2.html#simulation-parameters",
+    "title": "Monte Carlo Simulation of Antibiotic PK Variability and Probability of Target Attainment",
+    "section": "Simulation Parameters",
+    "text": "Simulation Parameters\nIn this simulation, 10,000 virtual patients were generated to be treated with a 1200 mg dose of vancomycin. A one-compartment model was assumed, where the 24-hour area under the curve (AUC24) is approximated as:\n\\[\n{AUC_{24}} = \\frac{dose}{Cl}\n\\]\nThis formulation allows variablitiy in renal clearance (Cl) to directly drive differences in drug exposure. Cl was modeled as a log-normal distribution with a mean of 5 L/h and σ = 0.4, reflecting inter-individual variability in renal function. Reported population estimates for vancomycin clearance are typically around 4-5 L/h in patients with normal renal function.1\nThe dosing regimen was evaluated against bacterial strains with minimum inhibitory concentrations (MIC) of 0.25, 0.5, 1, 2 and 4 mg/L.\nVancomycin efficacy is best described by the \\(AUC/MIC\\) PK/PD index, with a target of ≥400 associated with clinical success2. In contrast, other PK/PD indices, such as \\(C_{\\max}/MIC\\) and \\(T&gt;MIC\\), are commonly used for different classes of antibiotics depending on their pharmacodynamic properties. PTA was therefore defined as the proportion of simulated patients achieving AUC/MIC ≥ 400."
+  },
+  {
+    "objectID": "Portfolio2.html#results",
+    "href": "Portfolio2.html#results",
+    "title": "Monte Carlo Simulation of Antibiotic PK Variability and Probability of Target Attainment",
+    "section": "Results",
+    "text": "Results\n\nTesting across increasing MIC values demonstrates a progressive leftward shift in the AUC/MIC distribution, resulting in a sharp decline in PTA. At MIC ≥ 2 mg/L, the probability of achieving the target approaches zero at standard dosing.\nThis highlights a key clinical challenge: increasing dose may improve PTA, but is constrained by toxicity risk. The balance between efficacy and safety becomes increasingly difficult as MIC rises.\nIn the following interactive model, the effect of dose escalation at a fixed MIC of 0.5 mg/L is explored."
+  },
+  {
+    "objectID": "Portfolio2.html#effects-of-dose-escalation-on-target-attainment",
+    "href": "Portfolio2.html#effects-of-dose-escalation-on-target-attainment",
+    "title": "Monte Carlo Simulation of Antibiotic PK Variability and Probability of Target Attainment",
+    "section": "Effects of Dose Escalation on Target Attainment",
+    "text": "Effects of Dose Escalation on Target Attainment\n\n\n                            \n                                            \n\n\nUsing the same parameter distributions, MIC was fixed at 0.5 mg/L while dose was varied from 800 mg to 2400 mg.\nIncreasing dose leads to higher PTA, as expected, since AUC is directly proportional to dose:\n\\[\n\\frac{AUC_{24}}{MIC} = \\frac{Dose}{Cl \\times MIC}\n\\]\nHowever, variability in exposure also increases with higher dosing, as the effect of clearance variability is amplified. As a result, gains in PTA begin to plateau at higher doses, with progressively smaller improvements despite substantial dose increases.\nThis demonstrates a key limitation of dose escalation: beyond a certain point, increasing dose yields diminishing returns in PTA."
+  },
+  {
+    "objectID": "Portfolio2.html#pta-across-dose-mic-combinations",
+    "href": "Portfolio2.html#pta-across-dose-mic-combinations",
+    "title": "Monte Carlo Simulation of Antibiotic PK Variability and Probability of Target Attainment",
+    "section": "PTA Across Dose-MIC Combinations",
+    "text": "PTA Across Dose-MIC Combinations\n\n\n                            \n                                            \n\n\nThis heatmap illustrates the relationship between antibiotic dose, MIC, and PTA across the simulated population.\nAs MIC increases, substantially higher doses are required to maintain PTA ≥ 90% (black line). However, at MIC ≥ 2 mg/L, even aggressive dosing fails to reliably achieve the therapeutic target, entering ranges where toxicity risk becomes clinically significant.\nBuilding on the diminishing returns observed with dose escalation, this visualization shows that for higher MIC values, achieving adequate exposure may be fundamentally unattainable with standard therapy, and support the need for alternative treatment strategies."
+  },
+  {
+    "objectID": "Portfolio2.html#references",
+    "href": "Portfolio2.html#references",
+    "title": "Monte Carlo Simulation of Antibiotic PK Variability and Probability of Target Attainment",
+    "section": "References",
+    "text": "References\n\n\n1. Holford N, O’Hanlon CJ, Allegaert K, Anderson BJ, Falcão A, Simon N, et al. A physiological approach to renal clearance: From premature neonates to adults. British journal of clinical pharmacology. 2024 Apr;90:1066–1080. doi:10.1111/bcp.15978.↩︎\n2. Rybak MJ, Le J, Lodise T, Levine D, Bradley J, Liu C, Mueller B, Pai M, Wong-Beringer A, Rotschafer JC, Rodvold K, Maples HD, Lomaestro BM. Executive Summary: Therapeutic Monitoring of Vancomycin for Serious Methicillin-Resistant Staphylococcus aureus Infections: A Revised Consensus Guideline and Review of the American Society of Health-System Pharmacists, the Infectious Diseases Society of America, the Pediatric Infectious Diseases Society, and the Society of Infectious Diseases Pharmacists. J Pediatric Infect Dis Soc. 2020 Jul 13;9(3):281-284. doi: 10.1093/jpids/piaa057. PMID: 32659787; PMCID: PMC7358040.↩︎"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Home",
     "section": "",
-    "text": "I am a pharmacology graduate student with interests in computational analysis, neuropharmacology, and pharmacokinetics/pharmacodynamics, with a focus on understanding drug action across molecular and physiological systems.\n\n\n\nI graduated from Brigham Young University in 2024 with a double major in Exercise Science and Spanish. Relevant coursework included neuroanatomy, physiology, chemistry, and microbiology. I am currently pursuing a master’s degree in pharmacology at the University of the Basque Country in Bilbao, Spain.\nMy current research focuses on neuropharmacology and depression-related therapies, combining experimental techniques such as immunohistochemistry with computational approaches for data analysis and interpretation.\n\n\n\n\n\nNeuropharmacology and CNS drug action\nPharmacokinetics and pharmacodynamics (including predictive modeling)\nComputational analysis and data interpretation\nReceptor pharmacology and ligand binding\n\n\n\n\n\n\nMolecular visualization: PyMOL\nData analysis and modeling: Python, Phoenix WinNonlin, GraphPad Prism\nImage analysis: FIJI/ImageJ\nLaboratory techniques: Cell culture, PCR, Western blot, immunohistochemistry, confocal microscopy\n\n\n\n\n\n\n\nComparative analysis of serotonin receptor subtypes using structural biology and computational visualization to assess ligand binding and receptor activation.\nView Project →"
+    "text": "I am a pharmacology graduate student with interests in computational analysis, neuropharmacology, and pharmacokinetics/pharmacodynamics, with a focus on understanding drug action across molecular and physiological systems.\n\n\n\nI graduated from Brigham Young University in 2024 with a double major in Exercise Science and Spanish. Relevant coursework included neuroanatomy, physiology, chemistry, and microbiology. I am currently pursuing a master’s degree in pharmacology at the University of the Basque Country in Bilbao, Spain.\nMy current research focuses on neuropharmacology and depression-related therapies, combining experimental techniques such as immunohistochemistry with computational approaches for data analysis and interpretation.\n\n\n\n\n\nNeuropharmacology and CNS drug action\nPharmacokinetics and pharmacodynamics (including predictive modeling)\nComputational analysis and data interpretation\nReceptor pharmacology and ligand binding\n\n\n\n\n\n\nMolecular visualization: PyMOL\nData analysis and modeling: Python, Phoenix WinNonlin, GraphPad Prism\nImage analysis: FIJI/ImageJ\nLaboratory techniques: Cell culture, PCR, Western blot, immunohistochemistry, confocal microscopy\n\n\n\n\n\n\n\nComparative analysis of serotonin receptor subtypes using structural biology and computational visualization to assess ligand binding and receptor activation.\nView Project →\n\n\n\nSimulating inter-individual pharmacokinetic variability to evaluate the probability of achieving therapeutic antibiotic exposure targets.\nView Project →"
   },
   {
     "objectID": "index.html#bio",
@@ -95,6 +144,6 @@
     "href": "index.html#projects",
     "title": "Home",
     "section": "",
-    "text": "Comparative analysis of serotonin receptor subtypes using structural biology and computational visualization to assess ligand binding and receptor activation.\nView Project →"
+    "text": "Comparative analysis of serotonin receptor subtypes using structural biology and computational visualization to assess ligand binding and receptor activation.\nView Project →\n\n\n\nSimulating inter-individual pharmacokinetic variability to evaluate the probability of achieving therapeutic antibiotic exposure targets.\nView Project →"
   }
 ]

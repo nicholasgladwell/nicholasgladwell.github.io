@@ -42,3 +42,9 @@ My current research focuses on neuropharmacology and depression-related therapie
 Comparative analysis of serotonin receptor subtypes using structural biology and computational visualization to assess ligand binding and receptor activation.
 
 [View Project →](Portfolio1.qmd)
+
+### Monte Carlo Simulation of Antibiotic PK Variability and Probability of Target Attainment
+
+Simulating inter-individual pharmacokinetic variability to evaluate the probability of achieving therapeutic antibiotic exposure targets.
+
+[View Project →](Portfolio2.qmd)

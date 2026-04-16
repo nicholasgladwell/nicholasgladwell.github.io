@@ -14,6 +14,8 @@ website:
         menu:
           - href: Portfolio1.qmd
             text: Structural Basis of Functional Selectivity in 5-HT<sub>2A</sub> and 5-HT<sub>2B</sub> Receptors
+          - href: Portfolio2.qmd
+            text: Monte Carlo Simulation of Antibiotic PK Variability and Probability of Target Attainment
 
 format:
   html:
@@ -23,6 +25,7 @@ format:
     css: styles.css
     toc: true
     smooth-scroll: true
+    embed-resources: true
 
 
 
