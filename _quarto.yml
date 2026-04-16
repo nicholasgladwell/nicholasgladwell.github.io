@@ -28,6 +28,8 @@ format:
     smooth-scroll: true
     embed-resources: false
     math: mathjax
+    mathjax:
+      extensions: []
 
 
 

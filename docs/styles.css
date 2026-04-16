@@ -1,4 +1,8 @@
-/* css styles */
+
+img {
+  opacity: 1 !important;
+  filter: none !important;
+}
 
 iframe {
   border-radius: 10px;
