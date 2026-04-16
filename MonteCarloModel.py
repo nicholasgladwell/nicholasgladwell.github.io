@@ -8,10 +8,7 @@ def generate_plot():
 
     doses = [800, 1200, 1600, 2000, 2400]
 
-    Cl_min = 4 
-    x_max = max(doses) / (Cl_min * MIC)
-
-    bins = np.linspace(0, x_max, 50)
+    bins = np.linspace(0, 1500, 50)
 
     fig = go.Figure()
 
