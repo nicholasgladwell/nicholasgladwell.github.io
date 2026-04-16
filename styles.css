@@ -2,6 +2,7 @@
 img {
   opacity: 1 !important;
   filter: none !important;
+  background-color: white;
 }
 
 iframe {

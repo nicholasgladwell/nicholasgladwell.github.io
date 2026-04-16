@@ -29,7 +29,9 @@ format:
     embed-resources: false
     math: mathjax
     mathjax:
-      extensions: []
+      config:
+        loader:
+          load: []
 
 
 
