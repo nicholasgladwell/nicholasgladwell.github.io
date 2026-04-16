@@ -59,8 +59,8 @@ def generate_plot():
         title=f"Dose = {doses[0]} | PTA = {pta_values[0]*100:.2f}%",
         xaxis_title="AUC/MIC",
         yaxis_title="Probability Density",
-        xaxis=dict(range=[0, x_max]),
-        yaxis=dict(range=[0, 0.0045]) 
+        xaxis=dict(range=[0, 1500]),
+        yaxis=dict(range=[0, 0.0035]) 
     )
 
     return fig
