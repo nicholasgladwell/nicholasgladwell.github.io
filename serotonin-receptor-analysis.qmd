@@ -14,10 +14,10 @@ This project examines residue-level similarities and differences between 5-HT<su
 
 To better understand how LSD interacts with serotonin receptors, it is first useful to examine its structural similarity to the endogenous ligand.
 <div class="molecule-container">
-  <img id="lsd" src="/overlay/lsd.png" class="layer visible">
-  <img id="serotonin" src="/overlay/serotonin.png" class="layer">
-  <img id="shared" src="/overlay/common.png" class="layer">
-  <img id="residues" src="/overlay/shared_residues.png" class="layer">
+  <img id="lsd" src="overlay/lsd.png" class="layer visible">
+  <img id="serotonin" src="overlay/serotonin.png" class="layer">
+  <img id="shared" src="overlay/common.png" class="layer">
+  <img id="residues" src="overlay/shared_residues.png" class="layer">
 </div>
 
 <div class="controls">

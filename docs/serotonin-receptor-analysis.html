@@ -73,13 +73,13 @@ ul.task-list li input[type="checkbox"] {
 <style>html{ scroll-behavior: smooth; }</style>
 <script>
   window.MathJax = {
-    loader: { load: [] },
     tex: {
       inlineMath: [['$', '$'], ['\\(', '\\)']],
       displayMath: [['$$', '$$'], ['\\[', '\\]']]
     }
   };
 </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 
 
 <link rel="stylesheet" href="styles.css">
@@ -183,7 +183,7 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="serotonin-and-lsd-molecular-structures">Serotonin and LSD Molecular Structures</h2>
 To better understand how LSD interacts with serotonin receptors, it is first useful to examine its structural similarity to the endogenous ligand.
 <div class="molecule-container">
-<p><img id="lsd" src="./overlay/lsd.png" class="layer visible"> <img id="serotonin" src="./overlay/serotonin.png" class="layer"> <img id="shared" src="./overlay/common.png" class="layer"> <img id="residues" src="./overlay/shared_residues.png" class="layer"></p>
+<p><img id="lsd" src="overlay/lsd.png" class="layer visible"> <img id="serotonin" src="overlay/serotonin.png" class="layer"> <img id="shared" src="overlay/common.png" class="layer"> <img id="residues" src="overlay/shared_residues.png" class="layer"></p>
 </div>
 <div class="controls">
 <p><button class="viewer-btn secondary" onclick="toggleLayer('lsd')">LSD</button> <button class="viewer-btn secondary" onclick="toggleLayer('serotonin')">Serotonin</button> <button class="viewer-btn secondary" onclick="toggleLayer('shared')">Shared Structure</button> <button class="viewer-btn secondary" onclick="toggleLayer('residues')">Orthosteric Pocket Residues</button></p>
