@@ -3,6 +3,7 @@ project:
   output-dir: docs
   resources:
     - data/
+    - viewer.html
 
 website:
   title: "Nicholas Gladwell"
@@ -12,9 +13,9 @@ website:
         text: Home
       - text: Projects
         menu:
-          - href: Portfolio1.qmd
+          - href: serotonin-receptor-analysis.qmd
             text: Structural Basis of Functional Selectivity in 5-HT<sub>2A</sub> and 5-HT<sub>2B</sub> Receptors
-          - href: Portfolio2.qmd
+          - href: pk-monte-carlo-simulation.qmd
             text: Monte Carlo Simulation of Antibiotic PK Variability and Probability of Target Attainment
 
 format:
@@ -25,8 +26,8 @@ format:
     css: styles.css
     toc: true
     smooth-scroll: true
-    embed-resources: true
-    math: katex
+    embed-resources: false
+    math: mathjax
 
 
 

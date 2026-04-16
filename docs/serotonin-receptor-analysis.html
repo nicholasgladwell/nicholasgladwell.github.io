@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.36">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Structural Basis of Functional Selectivity in 5-HT2A and 5-HT2B Receptors – Nicholas Gladwell</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-8ce484d92116c4accc59257505a5c3a2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Nicholas Gladwell</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-projects" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Projects</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-projects">    
+        <li>
+    <a class="dropdown-item" href="./serotonin-receptor-analysis.html">
+ <span class="dropdown-text">Structural Basis of Functional Selectivity in 5-HT<sub>2A</sub> and 5-HT<sub>2B</sub> Receptors</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./pk-monte-carlo-simulation.html">
+ <span class="dropdown-text">Monte Carlo Simulation of Antibiotic PK Variability and Probability of Target Attainment</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#serotonin-and-lsd-molecular-structures" id="toc-serotonin-and-lsd-molecular-structures" class="nav-link" data-scroll-target="#serotonin-and-lsd-molecular-structures">Serotonin and LSD Molecular Structures</a></li>
+  <li><a href="#interactive-receptor-comparison" id="toc-interactive-receptor-comparison" class="nav-link" data-scroll-target="#interactive-receptor-comparison">Interactive Receptor Comparison</a></li>
+  <li><a href="#examining-lsd-binding-affinity-and-functional-activity" id="toc-examining-lsd-binding-affinity-and-functional-activity" class="nav-link" data-scroll-target="#examining-lsd-binding-affinity-and-functional-activity">Examining LSD Binding Affinity and Functional Activity</a></li>
+  <li><a href="#residue-differences-and-predicted-binding-interactions" id="toc-residue-differences-and-predicted-binding-interactions" class="nav-link" data-scroll-target="#residue-differences-and-predicted-binding-interactions">Residue Differences and Predicted Binding Interactions</a>
+  <ul class="collapse">
+  <li><a href="#structurally-different" id="toc-structurally-different" class="nav-link" data-scroll-target="#structurally-different">Structurally Different</a></li>
+  <li><a href="#chemically-different" id="toc-chemically-different" class="nav-link" data-scroll-target="#chemically-different">Chemically Different</a></li>
+  </ul></li>
+  <li><a href="#conclusions" id="toc-conclusions" class="nav-link" data-scroll-target="#conclusions">Conclusions</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content column-page-left" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Structural Basis of Functional Selectivity in 5-HT<sub>2A</sub> and 5-HT<sub>2B</sub> Receptors</h1>
+</div>
+
+
+
+<div class="quarto-title-meta column-page-left">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>Serotonin receptors 5-HT<sub>2A</sub> and 5-HT<sub>2B</sub> are closely related G-protein coupled receptors with highly conserved orthosteric binding sites. Despite this structural similarity, they produce distinct physiological effects and differ in their pharmacological profiles. While activation of 5-HT<sub>2A</sub> is associated with CNS effects, off-target activation of 5-HT<sub>2B</sub> has been linked to adverse effects such as cardiac valvulopathy, as observed with drugs like fenfluramine<sup><a href="#fn1" id="ref1">1</a></sup>. This raises an important question: what leads receptors with similar binding sites to express different functional responses?</p>
+<p>Although these receptors share highly conserved orthosteric binding sites, they can produce distinct functional responses upon ligand binding. This phenomenon, often described as functional selectivity or biased agonism, occurs when a ligand preferentially stabilizes receptor conformations associated with specific intracellular signaling pathways. In the case of serotonin receptors, a wide range of exogenous ligands have been shown to engage both Gq and β-arrestin signaling to varying degrees depending on receptor subtype.<sup><a href="#fn2" id="ref2">2</a></sup>.</p>
+<p>This project examines residue-level similarities and differences between 5-HT<sub>2A</sub> and 5-HT<sub>2B</sub> using LSD as a model ligand. By integrating structural visualization with binding and functional data, it evaluates how conserved interactions within the orthosteric binding pocket and subtype-specific differences in the extended binding region may differentially stabilize receptor conformations associated with Gprotein (Gq) versus β-arrestin mediated signaling. In this context, the analysis specifically explores how these structural features may contribute to biased agonism, where LSD exhibits pathway-dependent signaling across receptor subtypes.</p>
+</section>
+<section id="serotonin-and-lsd-molecular-structures" class="level2">
+<h2 class="anchored" data-anchor-id="serotonin-and-lsd-molecular-structures">Serotonin and LSD Molecular Structures</h2>
+To better understand how LSD interacts with serotonin receptors, it is first useful to examine its structural similarity to the endogenous ligand.
+<div class="molecule-container">
+<p><img id="lsd" src="overlay/lsd.png" class="layer visible"> <img id="serotonin" src="overlay/serotonin.png" class="layer"> <img id="shared" src="overlay/common.png" class="layer"> <img id="residues" src="overlay/shared_residues.png" class="layer"></p>
+</div>
+<div class="controls">
+<p><button class="viewer-btn secondary" onclick="toggleLayer('lsd')">LSD</button> <button class="viewer-btn secondary" onclick="toggleLayer('serotonin')">Serotonin</button> <button class="viewer-btn secondary" onclick="toggleLayer('shared')">Shared Structure</button> <button class="viewer-btn secondary" onclick="toggleLayer('residues')">Orthosteric Pocket Residues</button></p>
+</div>
+<style>
+.molecule-container {
+  position: relative;
+  width: 400px;
+  height: 300px;
+}
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.layer.visible {
+  opacity: 1;
+}
+</style>
+<script>
+function toggleLayer(id) {
+  const exclusive = ['lsd', 'serotonin'];
+  
+  if (exclusive.includes(id)) {
+    const el = document.getElementById(id);
+    const other = exclusive.find(layer => layer !== id);
+    const otherEl = document.getElementById(other);
+
+    if (el.classList.contains('visible') && !otherEl.classList.contains('visible')) {
+      return;
+    }
+    exclusive.forEach(layer => {
+      document.getElementById(layer).classList.remove('visible');
+    });
+    el.classList.add('visible');
+    return;
+  }
+  document.getElementById(id).classList.toggle('visible');
+}
+</script>
+<p><i>Images created by author using Adobe Photoshop</i></p>
+<p>This visualization highlights structural similarities between LSD and serotonin. The “Orthosteric Pocket Residues” view marks where conserved binding site residues (shown in green), conserved across both 5-HT<sub>2A</sub> and 5-HT<sub>2B</sub> interact with each ligand. These interactions sites cluster around shared functional groups, showing that key residues in the orthosteric binding pocket engage common structural features across both molecules, helping maintain binding affinity.</p>
+</section>
+<section id="interactive-receptor-comparison" class="level2">
+<h2 class="anchored" data-anchor-id="interactive-receptor-comparison">Interactive Receptor Comparison</h2>
+<p>While these similarities provide insight at the molecular level, examining how LSD is positioned within the binding pocket offers a more direct view of ligand-receptor interactions. <iframe src="viewer.html" width="900" height="800"></iframe></p>
+<p><i>3D visualization rendered using NGL Viewer<sup><a href="#fn3" id="ref3">3</a></sup>. Structures shown: PDB IDs 7WC6 (5-HT<sub>2A</sub>)<sup><a href="#fn4" id="ref4">4</a></sup> and 5TVN (5-HT<sub>2B</sub>)<sup><a href="#fn5" id="ref5">5</a></sup>.</i></p>
+<p>These structures are derived from X-ray crystallography and were resolved at 2.6-2.9 Å, allowing for reliable identification of ligand-residue interactions. Residues are defined as those within 5 Å of LSD. Residues located deeper in the binding pocket primarily contribute to orthosteric ligand recognition (labeled in green). In general, those closer to the ligand’s extended moiety form an extended binding region that may influence exogenous ligand orientation and receptor activation (labeled in red/blue).</p>
+</section>
+<section id="examining-lsd-binding-affinity-and-functional-activity" class="level2">
+<h2 class="anchored" data-anchor-id="examining-lsd-binding-affinity-and-functional-activity">Examining LSD Binding Affinity and Functional Activity</h2>
+<p>Based on residue identification criteria, a large proportion (~70%) of LSD binding site residues are conserved between 5-HT<sub>2A</sub> and 5-HT<sub>2B</sub> receptors and are all located within the orthosteric binding pocket. These conserved residues, including hydrophobic (e.g., phenylalanine, valine) and hydrogen-bonding (e.g., serine) amino acids, stabilize the core ergoline structure of LSD and contribute to its similar binding affinity (K<sub>i</sub>) across receptor subtypes.</p>
+<table class="residue-table">
+<thead>
+<tr>
+<th>
+Receptor
+</th>
+<th>
+K<sub>i</sub> (nM)
+</th>
+<th>
+Assay
+</th>
+<th>
+EC<sub>50</sub> (nM)
+</th>
+<th>
+E<sub>max</sub> (%)
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+5-HT<sub>2A</sub>
+</td>
+<td>
+0.47–21
+</td>
+<td>
+IP1 formation
+</td>
+<td>
+0.24
+</td>
+<td>
+84
+</td>
+</tr>
+<tr>
+<td>
+5-HT<sub>2B</sub>
+</td>
+<td>
+0.98-30
+</td>
+<td>
+Ca<sup>2+</sup>
+</td>
+<td>
+8
+</td>
+<td>
+38
+</td>
+</tr>
+</tbody>
+</table>
+<p><i>Sources: <sup><a href="#fn6" id="ref6">6</a> </sup><sup><a href="#fn7" id="ref7">7</a></sup> <sup><a href="#fn8" id="ref8">8</a></sup> E<sub>max</sub> is relative to serotonin. Values are selected from representative studies using IP1 accumulation or Ca<sup>2+</sup> release assays as proxies for Gq-mediated signaling. Results may vary depending on assay conditions.</i></p>
+<p>Despite this similarity in binding, functional outcomes differ. While EC<sub>50</sub> and E<sub>max</sub> values suggest variability in activation, these measures are typically derived from Gq-mediated signaling assays and may not fully reflect pathway-specific activity. Notably, LSD has been shown to exhibit functional selectivity, engaging both Gq and β-arrestin pathways. At the 5-HT<sub>2A</sub> receptor this signaling has been described to be relatively balanced<sup><a href="#fn1" id="ref1">1</a></sup>, whereas at the 5-HT<sub>2B</sub> receptor, LSD has been shown to robustly recruit β-arrestin and may display pathway-dependent differences in signaling efficacy<sup><a href="#fn2" id="ref2">2</a></sup>.</p>
+<p>This indicates that differences in ligand-receptor interactions, especially outside the conserved orthosteric pocket, likely influence how specific receptor conformations are stabilized.</p>
+<p>Together, these findings suggest that while conserved orthosteric interactions mainly determine binding affinity, differences in ligand interactions outside this region likely contribute to the distinct receptor conformations underlying pathway-specific signaling.</p>
+</section>
+<section id="residue-differences-and-predicted-binding-interactions" class="level2">
+<h2 class="anchored" data-anchor-id="residue-differences-and-predicted-binding-interactions">Residue Differences and Predicted Binding Interactions</h2>
+<p>To further examine the basis of these functional differences, residues were analyzed in terms of their structural and physicochemical properties. Differences in the extended binding region primarily reflect structural variation between receptor subtypes, whereas only a single variation was identified within the conserved orthosteric pocket, consisting of a more subtle chemical change. Interactions were predicted based on interaction type and distance, though distances should be interpreted as approximate due to resolution limitations and the dynamic nature of receptors.</p>
+<section id="structurally-different" class="level3">
+<h3 class="anchored" data-anchor-id="structurally-different">Structurally Different</h3>
+<table class="residue-table">
+<thead>
+<tr>
+<th>
+Residue
+</th>
+<th>
+Receptor Subtype
+</th>
+<th>
+Distance From Ligand (Å)
+</th>
+<th>
+Predicted Interaction
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+Serine
+</td>
+<td>
+5-HT<sub>2A</sub>
+</td>
+<td>
+3.72 Å
+</td>
+<td>
+Polar H-Bond
+</td>
+</tr>
+<tr>
+<td>
+Cysteine
+</td>
+<td>
+5-HT<sub>2A</sub>
+</td>
+<td>
+4.70 Å
+</td>
+<td>
+Non-specific interaction
+</td>
+</tr>
+<tr>
+<td>
+Leucine
+</td>
+<td>
+5-HT<sub>2A</sub>
+</td>
+<td>
+4.91 Å
+</td>
+<td>
+Hydrophobic
+</td>
+</tr>
+<tr>
+<td>
+Glutamine
+</td>
+<td>
+5-HT<sub>2B</sub>
+</td>
+<td>
+4.48 Å
+</td>
+<td>
+Polar H-Bond
+</td>
+</tr>
+<tr>
+<td>
+Leucine
+</td>
+<td>
+5-HT<sub>2B</sub>
+</td>
+<td>
+3.68 Å
+</td>
+<td>
+Hydrophobic
+</td>
+</tr>
+<tr>
+<td>
+Glutamic Acid
+</td>
+<td>
+5-HT<sub>2B</sub>
+</td>
+<td>
+3.88 Å
+</td>
+<td>
+Negative Ionic
+</td>
+</tr>
+</tbody>
+</table>
+<p><i>Residue data were analyzed using PyMOL<sup><a href="#fn9" id="ref9">9</a></sup></i></p>
+<p>Several subtype-specific residues introduce localized differences in polarity and charge within the extended binding region. Notably, the presence of a negatively charged glutamic acid residue in 5-HT<sub>2B</sub>, absent in 5-HT<sub>2A</sub>, creates a distinct electrostatic environment. While this residue does not interact directly with any protonated groups of LSD, it may influence ligand orientation or stabilize alternative receptor conformations. In combination with other nearby substitutions, these differences may contribute to subtype-specific signaling outcomes.</p>
+</section>
+<section id="chemically-different" class="level3">
+<h3 class="anchored" data-anchor-id="chemically-different">Chemically Different</h3>
+<table class="residue-table">
+<thead>
+<tr>
+<th>
+5-HT<sub>2A</sub> Residue
+</th>
+<th>
+5-HT<sub>2A</sub> Distance
+</th>
+<th>
+5-HT<sub>2A</sub> Predicted Interaction
+</th>
+<th>
+5-HT<sub>2B</sub> Residue
+</th>
+<th>
+5-HT<sub>2B</sub> Distance
+</th>
+<th>
+5-HT<sub>2B</sub> Predicted Interaction
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+Serine
+</td>
+<td>
+3.81 Å
+</td>
+<td>
+Polar H-Bond
+</td>
+<td>
+Alanine
+</td>
+<td>
+3.82 Å
+</td>
+<td>
+Hydrophobic
+</td>
+</tr>
+</tbody>
+</table>
+<p><i>Residue data were analyzed using PyMOL<sup><a href="#fn9" id="ref9">9</a></sup></i></p>
+<p>A single chemically distinct substitution was identified within the orthosteric binding pocket. This change removes a potential hydrogen-bond interaction, replacing it with a hydrophobic contact. However, given the overall conservation of the orthosteric pocket and the similar binding affinities observed between receptor subtypes, this substitution alone is unlikely to explain differences in functional response.</p>
+</section>
+</section>
+<section id="conclusions" class="level2">
+<h2 class="anchored" data-anchor-id="conclusions">Conclusions</h2>
+<p>Overall, these highlighted differences do not substantially alter binding affinity, but may influence how receptor interactions are distributed across the orthosteric and extended binding regions. These subtle variations could affect the stabilization of receptor conformations associated with different signaling pathways, contributing to subtype-specific functional responses and potential signaling bias.</p>
+<p>These findings support a structural basis for biased agonism and highlight the importance of extended binding site interactions in shaping pathway-selective receptor activation.</p>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+<hr>
+
+<p><sup id="fn1">1. Rothman RB, Baumann MH, Savage JE, Rauser L, McBride A, Hufeisen SJ, Roth BL. Evidence for possible involvement of 5-HT(2B) receptors in the cardiac valvulopathy associated with fenfluramine and other serotonergic medications. Circulation. 2000 Dec 5;102(23):2836-41. doi: 10.1161/01.cir.102.23.2836. PMID: 11104741.<a href="#ref1" title="Jump back to footnote 1 in the text.">↩︎</a></sup><br></p>
+<p><sup id="fn2">2. McCorvy JD, Wacker D, Wang S, Agegnehu B, Liu J, Lansu K, Tribo AR, Olsen RHJ, Che T, Jin J, Roth BL. Structural determinants of 5-HT2B receptor activation and biased agonism. Nat Struct Mol Biol. 2018 Sep;25(9):787-796. doi: 10.1038/s41594-018-0116-7. Epub 2018 Aug 20. PMID: 30127358; PMCID: PMC6237183.<a href="#ref2" title="Jump back to footnote 2 in the text.">↩︎</a></sup><br></p>
+<p><sup id="fn3">3. Rose AS, Hildebrand PW. NGL Viewer: a web application for molecular visualization. Nucleic Acids Res. 2015.<a href="#ref3" title="Jump back to footnote 3 in the text.">↩︎</a></sup><br></p>
+<p><sup id="fn4">4. Cao D, Yu J, Wang H, Luo Z, Liu X, He L, Qi J, Fan L, Tang L, Chen Z, Li J, Cheng J, Wang S. Crystal structure of serotonin 2A receptor in complex with LSD (PDB ID: 7WC6). Protein Data Bank. 2022. doi:10.2210/pdb7WC6/pdb.<a href="#ref4" title="Jump back to footnote 4 in the text.">↩︎</a></sup><br></p>
+<p><sup id="fn5">5. Wacker, D., Wang, S., McCorvy, J.D., Betz, R.M., Venkatakrishnan, A.J., Levit, A., Lansu, K., Schools, Z.L., Che, T., Nichols, D.E., Shoichet, B.K., Dror, R.O., Roth, B.L. Crystal structure of the LSD-bound 5-HT2B receptor (PDB ID: 5TVN). Protein Data Bank. 2017. doi:10.2210/pdb5TVN/pdb.<a href="#ref5" title="Jump back to footnote 5 in the text.">↩︎</a></sup><br></p>
+<p><sup id="fn6">6. Psychoactive Drug Screening Program (PDSP) Ki Database [Internet]. Chapel Hill (NC): University of North Carolina; [cited 2026 Apr 11]. Available from: https://pdsp.unc.edu/databases/pdsp.php<a href="#ref6" title="Jump back to footnote 6 in the text.">↩︎</a></sup><br></p>
+<p><sup id="fn7">7. Janowsky A, Eshleman AJ, Johnson RA, Wolfrum KM, Hinrichs DJ, Yang J, Zabriskie TM, Smilkstein MJ, Riscoe MK. Mefloquine and psychotomimetics share neurotransmitter receptor and transporter interactions in vitro. Psychopharmacology (Berl). 2014 Jul;231(14):2771-83. doi: 10.1007/s00213-014-3446-0. Epub 2014 Feb 2. PMID: 24488404; PMCID: PMC4097020.<a href="#ref7" title="Jump back to footnote 7 in the text.">↩︎</a></sup><br></p>
+<p><sup id="fn8">8. Wsół A. Cardiovascular safety of psychedelic medicine: current status and future directions. Pharmacol Rep.&nbsp;2023 Dec;75(6):1362-1380. doi: 10.1007/s43440-023-00539-4. Epub 2023 Oct 24. PMID: 37874530; PMCID: PMC10661823.<a href="#ref8" title="Jump back to footnote 8 in the text.">↩︎</a></sup><br></p>
+<p><sup id="fn9">9. Schrödinger, LLC. The PyMOL Molecular Graphics System, Version 3.1.0.<a href="#ref9" title="Jump back to footnote 9 in the text.">↩︎</a></sup></p>
+
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>
