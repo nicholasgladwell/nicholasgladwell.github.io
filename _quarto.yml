@@ -26,6 +26,7 @@ format:
     toc: true
     smooth-scroll: true
     embed-resources: true
+    math: katex
 
 
 

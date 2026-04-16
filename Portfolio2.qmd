@@ -10,7 +10,7 @@ jupyter: python3
 ---
 ## Introduction
 
-Monte Carlo simulations are widely used in pharmacokinetics to model inter-individual variability and predict drug exposure across virtual populations. By repeatedly sampling from parameter distributions, these methods allow estimation of the probability of achieving pharmacodynamic targets under different clinical scenarios.
+Monte Carlo simulations are widely used in pharmacokinetics to model interindividual variability and predict drug exposure across virtual populations. By repeatedly sampling from parameter distributions, these methods allow estimation of the probability of achieving pharmacodynamic targets under different clinical scenarios.
 
 In the context of antibacterial therapy, this is commonly expressed as the probability of target attainment (PTA), which quantifies the likelihood that a given dosing regimen will achieve a predefined PK/PD index associated with efficacy.
 
@@ -22,7 +22,7 @@ $$
 {AUC_{24}} = \frac{dose}{Cl}
 $$
 
- This formulation allows variablitiy in renal clearance (Cl) to directly drive differences in drug exposure. Cl was modeled as a log-normal distribution with a mean of 5 L/h and σ = 0.4, reflecting inter-individual variability in renal function. Reported population estimates for vancomycin clearance are typically around 4-5 L/h in patients with normal renal function.<sup><a href="#fn1" id="ref1">1</a></sup>
+ This formulation allows variablitiy in renal clearance (Cl) to directly drive differences in drug exposure. Cl was modeled as a log-normal distribution with a mean of 5 L/h and σ = 0.4, reflecting interindividual variability in renal function. Reported population estimates for vancomycin clearance are typically around 4-5 L/h in patients with normal renal function.<sup><a href="#fn1" id="ref1">1</a></sup>
  
  The dosing regimen was evaluated against bacterial strains with minimum inhibitory concentrations (MIC) of 0.25, 0.5, 1, 2 and 4 mg/L. 
 

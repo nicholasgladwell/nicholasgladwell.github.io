@@ -5,7 +5,7 @@ page-layout: full
 
 # Nicholas Gladwell
 
-<img src="profile_photo.jpg" width="200">
+<img src="profile_photo.jpg" width="200" loading="eager">
 
 I am a pharmacology graduate student with interests in computational analysis, neuropharmacology, and pharmacokinetics/pharmacodynamics, with a focus on understanding drug action across molecular and physiological systems.
 
@@ -45,6 +45,6 @@ Comparative analysis of serotonin receptor subtypes using structural biology and
 
 ### Monte Carlo Simulation of Antibiotic PK Variability and Probability of Target Attainment
 
-Simulating inter-individual pharmacokinetic variability to evaluate the probability of achieving therapeutic antibiotic exposure targets.
+Simulating interindividual pharmacokinetic variability to evaluate the probability of achieving therapeutic antibiotic exposure targets.
 
 [View Project →](Portfolio2.qmd)
