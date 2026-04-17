@@ -1,8 +1,6 @@
 ---
 title: "Monte Carlo Simulation of Antibiotic PK Variability and Probability of Target Attainment"
-format: 
-    html: 
-        self-contained: true
+format: html
 execute:
     enabled: true
     echo: false

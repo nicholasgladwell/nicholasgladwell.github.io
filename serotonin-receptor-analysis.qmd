@@ -1,6 +1,5 @@
 ---
 title: "Structural Basis of Functional Selectivity in 5-HT<sub>2A</sub> and 5-HT<sub>2B</sub> Receptors"
-format: html
 ---
 ## Introduction
 
@@ -27,29 +26,11 @@ To better understand how LSD interacts with serotonin receptors, it is first use
   <button class="viewer-btn secondary" onclick="toggleLayer('residues')">Orthosteric Pocket Residues</button>
 </div>
 
-<style>
-.molecule-container {
-  position: relative;
-  width: 400px;
-  height: 300px;
-}
-.layer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-.layer.visible {
-  opacity: 1;
-}
-</style>
 
 <script>
 function toggleLayer(id) {
   const exclusive = ['lsd', 'serotonin'];
-  
+
   if (exclusive.includes(id)) {
     const el = document.getElementById(id);
     const other = exclusive.find(layer => layer !== id);
@@ -58,12 +39,15 @@ function toggleLayer(id) {
     if (el.classList.contains('visible') && !otherEl.classList.contains('visible')) {
       return;
     }
+
     exclusive.forEach(layer => {
       document.getElementById(layer).classList.remove('visible');
     });
+
     el.classList.add('visible');
     return;
   }
+
   document.getElementById(id).classList.toggle('visible');
 }
 </script>

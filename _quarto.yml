@@ -28,8 +28,6 @@ format:
     css: styles.css
     toc: true
     smooth-scroll: true
-    embed-resources: false
-    self-contained: false
     include-in-header:
       text: |
         <script>
@@ -40,7 +38,5 @@ format:
             }
           };
         </script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
-
-
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
 

@@ -79,7 +79,7 @@ ul.task-list li input[type="checkbox"] {
     }
   };
 </script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
 
 
 <link rel="stylesheet" href="styles.css">
@@ -188,28 +188,10 @@ To better understand how LSD interacts with serotonin receptors, it is first use
 <div class="controls">
 <p><button class="viewer-btn secondary" onclick="toggleLayer('lsd')">LSD</button> <button class="viewer-btn secondary" onclick="toggleLayer('serotonin')">Serotonin</button> <button class="viewer-btn secondary" onclick="toggleLayer('shared')">Shared Structure</button> <button class="viewer-btn secondary" onclick="toggleLayer('residues')">Orthosteric Pocket Residues</button></p>
 </div>
-<style>
-.molecule-container {
-  position: relative;
-  width: 400px;
-  height: 300px;
-}
-.layer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-.layer.visible {
-  opacity: 1;
-}
-</style>
 <script>
 function toggleLayer(id) {
   const exclusive = ['lsd', 'serotonin'];
-  
+
   if (exclusive.includes(id)) {
     const el = document.getElementById(id);
     const other = exclusive.find(layer => layer !== id);
@@ -218,12 +200,15 @@ function toggleLayer(id) {
     if (el.classList.contains('visible') && !otherEl.classList.contains('visible')) {
       return;
     }
+
     exclusive.forEach(layer => {
       document.getElementById(layer).classList.remove('visible');
     });
+
     el.classList.add('visible');
     return;
   }
+
   document.getElementById(id).classList.toggle('visible');
 }
 </script>
