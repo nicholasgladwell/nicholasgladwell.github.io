@@ -12,31 +12,32 @@ page-layout: full
      fetchpriority="high"
      style="display:block; background-color:white;">
 
-I am a pharmacology graduate student with interests in computational analysis, neuropharmacology, and pharmacokinetics/pharmacodynamics, with a focus on understanding drug action across molecular and physiological systems.
+I hold a Master's in Pharmacology, with interests in drug discovery, preclinical research, neuropharmacology, and pharmacokinetics/pharmacodynamics. My work combines experimental laboratory techniques with computational methods to better understand how drugs interact with biological systems from the molecular to the organism level.
 
 ---
 
 ## Bio
-I graduated from Brigham Young University in 2024 with a double major in Exercise Science and Spanish. Relevant coursework included neuroanatomy, physiology, chemistry, and microbiology. I am currently pursuing a master's degree in pharmacology at the University of the Basque Country in Bilbao, Spain.
+I graduated from Brigham Young University in 2024 with a double major in Exercise Science and Spanish before completing a Master's in Pharmacology at the University of the Basque Country in Bilbao, Spain. My graduate research investigated the effects of psilocybin on brain cellular responses and neuronal plasticity associated with depression using transgenic mouse models, immunohistochemistry, confocal microscopy, and quantitative image analysis.
 
-My current research focuses on neuropharmacology and depression-related therapies, combining experimental techniques such as immunohistochemistry with computational approaches for data analysis and interpretation.
+Through my coursework and research, I have developed interests spanning neuropharmacology, pharmaceutical formulation, pharmacokinetic/pharmacodynamic modeling, and translational drug development. I enjoy integrating laboratory experimentation with computational methods to better understand drug mechanisms and biological responses.
 
 ---
 
-## Focus Areas
-+ Neuropharmacology and CNS drug action
+## Research Interests
++ Neuropharmacology
 + Pharmacokinetics and pharmacodynamics (including predictive modeling)
-+ Computational analysis and data interpretation
-+ Receptor pharmacology and ligand binding
++ Pharmaceutical formulation and drug delivery
++ Preclinical and translational research
 
 
 ---
 
 ## Skills and Tools
- + <b>Molecular visualization:</b> PyMOL
- + <b>Data analysis and modeling:</b> Python, Phoenix WinNonlin, GraphPad Prism
- + <b>Image analysis:</b> FIJI/ImageJ
- + <b>Laboratory techniques:</b> Cell culture, PCR, Western blot, immunohistochemistry, confocal microscopy
++ <b>Laboratory techniques:</b> Cell culture, PCR/qPCR, Western blot, brain tissue processing, immunohistochemistry, confocal microscopy
++ <b>Data analysis and modeling:</b> Python, Phoenix WinNonlin, GraphPad Prism
++ <b>Image analysis:</b> FIJI/ImageJ
++ <b>Molecular visualization:</b> PyMOL
+
 
 ---
 
